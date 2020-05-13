@@ -170,13 +170,13 @@ header nav .d ul li a img {
 header .big-over-title {
   padding-top: 220px;
   padding-bottom: 35px;
-  font-size: calc(72px - 1vw);
+  font-size: 72px;
   color: white;
 }
 
 header .big-title {
   padding-bottom: 70px;
-  font-size: calc(150px - 1vw);
+  font-size: 150px;
   text-transform: uppercase;
   line-height: 140px;
   color: white;
