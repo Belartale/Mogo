@@ -139,16 +139,8 @@ header .logo {
 }
 
 header nav {
-  margin-top: 30px;
+  top: 30px;
   position: fixed;
-}
-
-header nav .d {
-  float: right;
-}
-
-header nav .d ul {
-  list-style-type: none;
 }
 
 header nav .d ul li {

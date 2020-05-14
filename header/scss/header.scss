@@ -1,5 +1,5 @@
-@import "null-style.scss";
-@import "general-classes.scss";
+@import "null-style.scss"; //Сброс стилей
+@import "general-classes.scss"; //Все классы
 
 //! begin
 //! header
@@ -15,12 +15,10 @@ header {
         color: $color-write;
     }
     nav {
-        margin-top: 30px;
+        top: 30px;
         position: fixed;
         .d {
-            float: right;
             ul {
-                list-style-type: none;
                 li {
                     display: inline-block;
                     margin-left: 55px;
