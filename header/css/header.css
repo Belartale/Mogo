@@ -100,23 +100,15 @@ select {
   text-align: center;
 }
 
-/* 
-@mixin transform($property) {
-    -webkit-transform: $property;
-    -ms-transform: $property;
-    transform: $property;
-}
-    .box { @include transform(rotate(30deg)); } 
-*/
-.over-title, header .big-over-title {
-  padding-bottom: 110px;
+.over-title {
+  padding-bottom: 25px;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   color: black;
 }
 
 .title, header .big-title {
-  padding-bottom: 400px;
+  padding-bottom: 40px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: black;
@@ -138,40 +130,92 @@ header .logo {
   color: white;
 }
 
+@media (max-width: 767px) {
+  header .logo {
+    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .logo {
+    font-size: calc( 20px + 10 * (100vw / 1202));
+  }
+}
+
 header nav {
   top: 30px;
   position: fixed;
+  width: 100%;
 }
 
-header nav .d ul li {
+header nav ul {
+  position: relative;
+  bottom: 40px;
+  left: 450px;
+}
+
+header nav ul li {
   display: inline-block;
   margin-left: 55px;
 }
 
-header nav .d ul li a {
+header nav ul li a {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
   color: white;
 }
 
-header nav .d ul li a img {
+@media (max-width: 767px) {
+  header nav ul li a {
+    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header nav ul li a {
+    font-size: calc( 8px + 6 * (100vw / 1202));
+  }
+}
+
+header nav ul li a img {
   display: inline-block;
 }
 
 header .big-over-title {
   padding-top: 220px;
-  padding-bottom: 35px;
-  font-size: 72px;
+  font-family: "Kaushan Script", cursive;
   color: white;
+}
+
+@media (max-width: 767px) {
+  header .big-over-title {
+    font-size: calc( 15px + 96.9 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .big-over-title {
+    font-size: calc( 15px + 57 * (100vw / 1202));
+  }
 }
 
 header .big-title {
   padding-bottom: 70px;
-  font-size: 150px;
   text-transform: uppercase;
   line-height: 140px;
   color: white;
+}
+
+@media (max-width: 767px) {
+  header .big-title {
+    font-size: calc( 30px + 204 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .big-title {
+    font-size: calc( 30px + 120 * (100vw / 1202));
+  }
 }
 
 header .line-one-header {
@@ -190,12 +234,60 @@ header .btn-header {
   color: white;
 }
 
+@media (max-width: 767px) {
+  header .btn-header {
+    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .btn-header {
+    font-size: calc( 8px + 6 * (100vw / 1202));
+  }
+}
+
 header .lines-two-header div {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
   margin: 0px 15px;
   display: inline-block;
   height: 3px;
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   background-color: white;
+}
+
+header .lines-two-header div p {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  header .lines-two-header div p {
+    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .lines-two-header div p {
+    font-size: calc( 8px + 6 * (100vw / 1202));
+  }
+}
+
+header .lines-two-header div p span {
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  header .lines-two-header div p span {
+    font-size: calc( 10px + 17 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .lines-two-header div p span {
+    font-size: calc( 10px + 10 * (100vw / 1202));
+  }
 }
 
 header .lines-two-header div:hover {
@@ -213,9 +305,32 @@ header .lines-two-text-header p {
   display: inline-block;
 }
 
+@media (max-width: 767px) {
+  header .lines-two-text-header p {
+    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .lines-two-text-header p {
+    font-size: calc( 8px + 6 * (100vw / 1202));
+  }
+}
+
 header .lines-two-text-header p span {
-  font-size: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  header .lines-two-text-header p span {
+    font-size: calc( 10px + 17 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .lines-two-text-header p span {
+    font-size: calc( 10px + 10 * (100vw / 1202));
+  }
 }
 
 header .lines-two-text-header .p1 {
@@ -232,4 +347,35 @@ header .lines-two-text-header .p3 {
 
 header .lines-two-text-header .p4 {
   margin-left: 205px;
+}
+
+@media (max-width: 1360px) {
+  .wrapper {
+    max-width: 1202px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1202px) {
+  .wrapper {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 940px) {
+  .wrapper {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 470px) {
+  .wrapper {
+    max-width: 300px;
+  }
 }

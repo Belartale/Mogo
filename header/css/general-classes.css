@@ -1,0 +1,26 @@
+.wrapper {
+  max-width: 1202px;
+  margin: 0 auto;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.over-title {
+  padding-bottom: 25px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: black;
+}
+
+.title {
+  padding-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: black;
+}
