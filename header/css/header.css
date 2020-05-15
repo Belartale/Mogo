@@ -103,15 +103,37 @@ select {
 .over-title {
   padding-bottom: 25px;
   font-family: "Kaushan Script", cursive;
-  font-size: 24px;
   color: black;
 }
 
-.title, header .big-title {
+@media (max-width: 767px) {
+  .over-title {
+    font-size: calc( 20px + 6.8 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .over-title {
+    font-size: calc( 20px + 4 * (100vw / 1202));
+  }
+}
+
+.title {
   padding-bottom: 40px;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
   color: black;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: calc( 26px + 6.8 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .title {
+    font-size: calc( 26px + 4 * (100vw / 1202));
+  }
 }
 
 header {
@@ -125,27 +147,27 @@ header .gradient {
   z-index: 1;
 }
 
-header .logo {
+header nav {
+  top: 30px;
+  position: fixed;
+  width: 100%;
+}
+
+header nav .logo {
   font: bold 30px "Montserrat", sans-serif;
   color: white;
 }
 
 @media (max-width: 767px) {
-  header .logo {
+  header nav .logo {
     font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header .logo {
+  header nav .logo {
     font-size: calc( 20px + 10 * (100vw / 1202));
   }
-}
-
-header nav {
-  top: 30px;
-  position: fixed;
-  width: 100%;
 }
 
 header nav ul {
@@ -181,8 +203,31 @@ header nav ul li a img {
   display: inline-block;
 }
 
+header nav .c {
+  display: none;
+}
+
+header nav .c #switch {
+  display: none;
+}
+
+header nav .c #switch:checked ~ ul {
+  display: block;
+}
+
+header nav .c .burger {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+header nav .c .burger img {
+  width: 40px;
+}
+
 header .big-over-title {
   padding-top: 220px;
+  padding-bottom: 40px;
   font-family: "Kaushan Script", cursive;
   color: white;
 }
@@ -200,6 +245,7 @@ header .big-over-title {
 }
 
 header .big-title {
+  font-family: "Montserrat", sans-serif;
   padding-bottom: 70px;
   text-transform: uppercase;
   line-height: 140px;
@@ -349,10 +395,18 @@ header .lines-two-text-header .p4 {
   margin-left: 205px;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1370px) {
   .wrapper {
     max-width: 1202px;
-    margin: 0 auto;
+  }
+  .wrapper .big-over-title {
+    padding-top: 140px;
+    padding-bottom: 30px;
+  }
+  .wrapper .btn-header {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 12px 30px;
   }
 }
 
@@ -360,17 +414,68 @@ header .lines-two-text-header .p4 {
   .wrapper {
     max-width: 940px;
   }
+  .wrapper nav ul li {
+    margin-left: 20px;
+  }
+  .wrapper .big-over-title {
+    padding-top: 140px;
+    padding-bottom: 30px;
+  }
+  .wrapper .btn-header {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 12px 30px;
+  }
 }
 
 @media (max-width: 940px) {
   .wrapper {
     max-width: 600px;
   }
+  .wrapper nav ul {
+    left: 150px;
+  }
+  .wrapper nav ul li {
+    margin-left: 20px;
+  }
+  .wrapper .big-over-title {
+    padding-top: 140px;
+    padding-bottom: 30px;
+  }
+  .wrapper .btn-header {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 12px 30px;
+  }
 }
 
 @media (max-width: 640px) {
   .wrapper {
     max-width: 400px;
+  }
+  .wrapper nav ul {
+    display: none;
+  }
+  .wrapper nav ul li {
+    margin-left: 20px;
+  }
+  .wrapper nav .c {
+    display: block;
+  }
+  .wrapper nav .c #switch {
+    display: none;
+  }
+  .wrapper nav .c #switch:checked ~ ul {
+    display: block;
+  }
+  .wrapper .big-over-title {
+    padding-top: 140px;
+    padding-bottom: 30px;
+  }
+  .wrapper .btn-header {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 12px 30px;
   }
 }
 

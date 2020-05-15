@@ -48,12 +48,12 @@ $color-black: black;
 %over-title {
     padding-bottom: 25px;
     font-family: $font-two;
-    font-size: 24px;
+    @include adaptiv-font(24, 20);
     color: $color-black;
 }
 %title {
     padding-bottom: 40px;
     font-family: $font-one;
-    font-size: 30px;
+    @include adaptiv-font(30, 26);
     color: $color-black;
 }
