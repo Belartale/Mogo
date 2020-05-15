@@ -147,85 +147,82 @@ header .gradient {
   z-index: 1;
 }
 
-header nav {
+header .gradient .wrapper nav {
   top: 30px;
   position: fixed;
   width: 100%;
 }
 
-header nav .logo {
+header .gradient .wrapper nav .a .logo {
   font: bold 30px "Montserrat", sans-serif;
   color: white;
 }
 
 @media (max-width: 767px) {
-  header nav .logo {
+  header .gradient .wrapper nav .a .logo {
     font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header nav .logo {
+  header .gradient .wrapper nav .a .logo {
     font-size: calc( 20px + 10 * (100vw / 1202));
   }
 }
 
-header nav ul {
+header .gradient .wrapper nav #switch {
+  display: none;
+}
+
+header .gradient .wrapper nav #switch:checked ~ .ul {
+  display: block;
+}
+
+header .gradient .wrapper nav .burger {
   position: relative;
-  bottom: 40px;
+  display: none;
+  height: 40px;
+  width: 40px;
+}
+
+header .gradient .wrapper nav .burger img {
+  width: 40px;
+}
+
+header .gradient .wrapper nav ul {
+  position: relative;
+  bottom: 30px;
   left: 450px;
 }
 
-header nav ul li {
+header .gradient .wrapper nav ul li {
   display: inline-block;
   margin-left: 55px;
 }
 
-header nav ul li a {
+header .gradient .wrapper nav ul li a {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   color: white;
 }
 
 @media (max-width: 767px) {
-  header nav ul li a {
+  header .gradient .wrapper nav ul li a {
     font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header nav ul li a {
+  header .gradient .wrapper nav ul li a {
     font-size: calc( 8px + 6 * (100vw / 1202));
   }
 }
 
-header nav ul li a img {
+header .gradient .wrapper nav ul li a img {
   display: inline-block;
 }
 
-header nav .c {
-  display: none;
-}
-
-header nav .c #switch {
-  display: none;
-}
-
-header nav .c #switch:checked ~ ul {
-  display: block;
-}
-
-header nav .c .burger {
-  height: 50px;
-  width: 50px;
-  background-color: red;
-}
-
-header nav .c .burger img {
-  width: 40px;
-}
-
-header .big-over-title {
+header .gradient .wrapper .big-over-title {
   padding-top: 220px;
   padding-bottom: 40px;
   font-family: "Kaushan Script", cursive;
@@ -233,18 +230,18 @@ header .big-over-title {
 }
 
 @media (max-width: 767px) {
-  header .big-over-title {
+  header .gradient .wrapper .big-over-title {
     font-size: calc( 15px + 96.9 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header .big-over-title {
+  header .gradient .wrapper .big-over-title {
     font-size: calc( 15px + 57 * (100vw / 1202));
   }
 }
 
-header .big-title {
+header .gradient .wrapper .big-title {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 70px;
   text-transform: uppercase;
@@ -253,24 +250,24 @@ header .big-title {
 }
 
 @media (max-width: 767px) {
-  header .big-title {
+  header .gradient .wrapper .big-title {
     font-size: calc( 30px + 204 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header .big-title {
+  header .gradient .wrapper .big-title {
     font-size: calc( 30px + 120 * (100vw / 1202));
   }
 }
 
-header .line-one-header {
+header .gradient .wrapper .line-one-header {
   height: 3px;
   width: 60px;
   background-color: white;
 }
 
-header .btn-header {
+header .gradient .wrapper .btn-header {
   margin-top: 50px;
   margin-bottom: 160px;
   display: inline-block;
@@ -281,18 +278,22 @@ header .btn-header {
 }
 
 @media (max-width: 767px) {
-  header .btn-header {
+  header .gradient .wrapper .btn-header {
     font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header .btn-header {
+  header .gradient .wrapper .btn-header {
     font-size: calc( 8px + 6 * (100vw / 1202));
   }
 }
 
-header .lines-two-header div {
+header .gradient .wrapper .lines-two-header {
+  padding-bottom: 30px;
+}
+
+header .gradient .wrapper .lines-two-header div {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: white;
@@ -304,183 +305,146 @@ header .lines-two-header div {
   background-color: white;
 }
 
-header .lines-two-header div p {
+header .gradient .wrapper .lines-two-header div p {
   display: inline-block;
 }
 
 @media (max-width: 767px) {
-  header .lines-two-header div p {
+  header .gradient .wrapper .lines-two-header div p {
     font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header .lines-two-header div p {
+  header .gradient .wrapper .lines-two-header div p {
     font-size: calc( 8px + 6 * (100vw / 1202));
   }
 }
 
-header .lines-two-header div p span {
+header .gradient .wrapper .lines-two-header div p span {
   font-weight: bold;
 }
 
 @media (max-width: 767px) {
-  header .lines-two-header div p span {
+  header .gradient .wrapper .lines-two-header div p span {
     font-size: calc( 10px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header .lines-two-header div p span {
+  header .gradient .wrapper .lines-two-header div p span {
     font-size: calc( 10px + 10 * (100vw / 1202));
   }
 }
 
-header .lines-two-header div:hover {
+header .gradient .wrapper .lines-two-header div:hover {
   background: -webkit-gradient(linear, left top, right top, color-stop(1%, red), color-stop(99%, white));
   background: linear-gradient(90deg, red 1%, white 99%);
 }
 
-header .lines-two-text-header {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: white;
-}
-
-header .lines-two-text-header p {
-  display: inline-block;
-}
-
-@media (max-width: 767px) {
-  header .lines-two-text-header p {
-    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
+@media (max-width: 1370px) {
+  header .gradient .wrapper {
+    max-width: 1202px;
+  }
+  header .gradient .wrapper .big-over-title {
+    padding-top: 140px;
+    padding-bottom: 30px;
+  }
+  header .gradient .wrapper .btn-header {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 12px 30px;
+  }
+  header .gradient .wrapper .lines-two-header div p span {
+    font-weight: bold;
   }
 }
 
-@media (min-width: 767px) {
-  header .lines-two-text-header p {
-    font-size: calc( 8px + 6 * (100vw / 1202));
-  }
-}
-
-header .lines-two-text-header p span {
-  font-weight: bold;
-}
-
-@media (max-width: 767px) {
-  header .lines-two-text-header p span {
+@media (max-width: 1370px) and (max-width: 767px) {
+  header .gradient .wrapper .lines-two-header div p span {
     font-size: calc( 10px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
-@media (min-width: 767px) {
-  header .lines-two-text-header p span {
+@media (max-width: 1370px) and (min-width: 767px) {
+  header .gradient .wrapper .lines-two-header div p span {
     font-size: calc( 10px + 10 * (100vw / 1202));
   }
 }
 
-header .lines-two-text-header .p1 {
-  margin-left: 15px;
-}
-
-header .lines-two-text-header .p2 {
-  margin-left: 215px;
-}
-
-header .lines-two-text-header .p3 {
-  margin-left: 205px;
-}
-
-header .lines-two-text-header .p4 {
-  margin-left: 205px;
-}
-
-@media (max-width: 1370px) {
-  .wrapper {
-    max-width: 1202px;
-  }
-  .wrapper .big-over-title {
-    padding-top: 140px;
-    padding-bottom: 30px;
-  }
-  .wrapper .btn-header {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding: 12px 30px;
-  }
-}
-
 @media (max-width: 1202px) {
-  .wrapper {
+  header .gradient .wrapper {
     max-width: 940px;
   }
-  .wrapper nav ul li {
+  header .gradient .wrapper nav ul li {
     margin-left: 20px;
   }
-  .wrapper .big-over-title {
-    padding-top: 140px;
-    padding-bottom: 30px;
+  header .gradient .wrapper .line-one-header {
+    margin-top: 140px;
+    margin-bottom: 30px;
   }
-  .wrapper .btn-header {
+  header .gradient .wrapper .btn-header {
     margin-top: 50px;
     margin-bottom: 100px;
     padding: 12px 30px;
+  }
+  header .gradient .wrapper .lines-two-header {
+    text-align: center;
+  }
+  header .gradient .wrapper .lines-two-header div {
+    text-align: left;
+    max-width: 200px;
   }
 }
 
 @media (max-width: 940px) {
-  .wrapper {
+  header .gradient .wrapper {
     max-width: 600px;
   }
-  .wrapper nav ul {
-    left: 150px;
+  header .gradient .wrapper nav ul {
+    left: 250px;
   }
-  .wrapper nav ul li {
-    margin-left: 20px;
+  header .gradient .wrapper nav ul li {
+    margin-left: 10px;
   }
-  .wrapper .big-over-title {
-    padding-top: 140px;
-    padding-bottom: 30px;
+  header .gradient .wrapper .big-title {
+    padding-bottom: 0px;
+    line-height: 100px;
   }
-  .wrapper .btn-header {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding: 12px 30px;
+  header .gradient .wrapper .line-one-header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  header .gradient .wrapper .btn-header {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 8px 20px;
+  }
+  header .gradient .wrapper .lines-two-header div {
+    max-width: 110px;
   }
 }
 
 @media (max-width: 640px) {
-  .wrapper {
+  header .gradient .wrapper {
     max-width: 400px;
   }
-  .wrapper nav ul {
-    display: none;
-  }
-  .wrapper nav ul li {
-    margin-left: 20px;
-  }
-  .wrapper nav .c {
+  header .gradient .wrapper nav .burger {
+    position: relative;
+    bottom: 35px;
+    left: 350px;
     display: block;
   }
-  .wrapper nav .c #switch {
-    display: none;
-  }
-  .wrapper nav .c #switch:checked ~ ul {
-    display: block;
-  }
-  .wrapper .big-over-title {
-    padding-top: 140px;
-    padding-bottom: 30px;
-  }
-  .wrapper .btn-header {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding: 12px 30px;
+  header .gradient .wrapper nav ul {
+    left: 1510px;
   }
 }
 
 @media (max-width: 470px) {
-  .wrapper {
+  header .gradient .wrapper {
     max-width: 300px;
+  }
+  header .gradient .wrapper nav .burger {
+    left: 250px;
   }
 }

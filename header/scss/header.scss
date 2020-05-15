@@ -9,232 +9,422 @@ header {
         background: linear-gradient(#e88182, #f1d98a) no-repeat;
         opacity: 0.9;
         z-index: 1;
-    }
-    nav {
-        top: 30px;
-        position: fixed;
-        width: 100%;
-        .logo {
-            font: bold 30px $font-one;
-            @include adaptiv-font(30, 20);
-            color: $color-write;
-        }
-
-        ul {
-            position: relative;
-            bottom: 40px;
-            left: 450px;
-            li {
-                display: inline-block;
-                margin-left: 55px;
-                a {
-                    text-transform: uppercase;
-                    font-family: $font-one;
-                    @include adaptiv-font(14, 8);
-                    color: $color-write;
+        .wrapper {
+            nav {
+                top: 30px;
+                position: fixed;
+                width: 100%;
+                .a {
+                    .logo {
+                        font: bold 30px $font-one;
+                        @include adaptiv-font(30, 20);
+                        color: $color-write;
+                    }
+                }
+                #switch {
+                    display: none;
+                }
+                #switch:checked ~ .ul {
+                    display: block;
+                }
+                .burger {
+                    position: relative;
+                    display: none;
+                    height: 40px;
+                    width: 40px;
                     img {
+                        width: 40px;
+                    }
+                }
+                ul {
+                    position: relative;
+                    bottom: 30px;
+                    left: 450px;
+                    li {
                         display: inline-block;
+                        margin-left: 55px;
+                        a {
+                            text-transform: uppercase;
+                            font-family: $font-one;
+                            @include adaptiv-font(14, 8);
+                            color: $color-write;
+                            img {
+                                display: inline-block;
+                            }
+                        }
                     }
                 }
             }
-        }
-        .c {
-            display: none;
-            #switch {
-                display: none;
-                &:checked ~ ul {
-                    display: block;
-                }
+            .big-over-title {
+                padding-top: 220px;
+                padding-bottom: 40px;
+                font-family: $font-two;
+                color: $color-write;
+                @include adaptiv-font(72, 15);
             }
-            .burger {
-                height: 50px;
-                width: 50px;
-                background-color: red;
-
-                img {
-                    width: 40px;
-                }
+            .big-title {
+                font-family: $font-one;
+                padding-bottom: 70px;
+                @include adaptiv-font(150, 30);
+                text-transform: uppercase;
+                line-height: 140px;
+                color: $color-write;
             }
-        }
-    }
-    .big-over-title {
-        padding-top: 220px;
-        padding-bottom: 40px;
-        font-family: $font-two;
-        color: $color-write;
-        @include adaptiv-font(72, 15);
-    }
-    .big-title {
-        font-family: $font-one;
-        padding-bottom: 70px;
-        @include adaptiv-font(150, 30);
-        text-transform: uppercase;
-        line-height: 140px;
-        color: $color-write;
-    }
-    .line-one-header {
-        height: 3px;
-        width: 60px;
-        background-color: $color-write;
-    }
-    .btn-header {
-        margin-top: 50px;
-        margin-bottom: 160px;
-        display: inline-block;
-        padding: 12px 30px;
-        border: solid 2px $color-write;
-        text-transform: uppercase;
-        @include adaptiv-font(14, 8);
-        color: $color-write;
-    }
-    .lines-two-header {
-        div {
-            font-family: $font-one;
-            text-transform: uppercase;
-            color: $color-write;
-            p {
-                @include adaptiv-font(14, 8);
+            .line-one-header {
+                height: 3px;
+                width: 60px;
+                background-color: $color-write;
+            }
+            .btn-header {
+                margin-top: 50px;
+                margin-bottom: 160px;
                 display: inline-block;
-                span {
-                    @include adaptiv-font(20, 10);
-                    font-weight: bold;
+                padding: 12px 30px;
+                border: solid 2px $color-write;
+                text-transform: uppercase;
+                @include adaptiv-font(14, 8);
+                color: $color-write;
+            }
+            .lines-two-header {
+                padding-bottom: 30px;
+                div {
+                    font-family: $font-one;
+                    text-transform: uppercase;
+                    color: $color-write;
+                    p {
+                        @include adaptiv-font(14, 8);
+                        display: inline-block;
+                        span {
+                            @include adaptiv-font(20, 10);
+                            font-weight: bold;
+                        }
+                    }
+                    margin: 0px 15px;
+                    display: inline-block;
+                    height: 3px;
+                    width: 100%;
+                    max-width: 260px;
+                    background-color: $color-write;
+                    &:hover {
+                        background: linear-gradient(
+                            90deg,
+                            red 1%,
+                            $color-write 99%
+                        );
+                    }
                 }
             }
-            margin: 0px 15px;
-            display: inline-block;
-            height: 3px;
-            width: 100%;
-            max-width: 260px;
-            background-color: $color-write;
-            &:hover {
-                background: linear-gradient(90deg, red 1%, $color-write 99%);
-            }
-        }
-    }
-    .lines-two-text-header {
-        font-family: $font-one;
-        text-transform: uppercase;
-        color: $color-write;
-        p {
-            @include adaptiv-font(14, 8);
-            display: inline-block;
-            span {
-                @include adaptiv-font(20, 10);
-                font-weight: bold;
-            }
-        }
-        .p1 {
-            margin-left: 15px;
-        }
-        .p2 {
-            margin-left: 215px;
-        }
-        .p3 {
-            margin-left: 205px;
-        }
-        .p4 {
-            margin-left: 205px;
         }
     }
 }
 //! @media
 @media (max-width: 1370px) {
-    .wrapper {
-        max-width: 1202px;
-
-        .big-over-title {
-            padding-top: 140px;
-            padding-bottom: 30px;
-        }
-        .btn-header {
-            margin-top: 50px;
-            margin-bottom: 100px;
-            padding: 12px 30px;
+    //! 1202
+    header {
+        .gradient {
+            .wrapper {
+                max-width: 1202px;
+                nav {
+                    .a {
+                        .logo {
+                        }
+                    }
+                    #switch {
+                        #switch:checked ~ ul {
+                        }
+                    }
+                    .burger {
+                        img {
+                        }
+                    }
+                    ul {
+                        li {
+                            a {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+                .big-over-title {
+                    padding-top: 140px;
+                    padding-bottom: 30px;
+                }
+                .big-title {
+                }
+                .line-one-header {
+                }
+                .btn-header {
+                    margin-top: 50px;
+                    margin-bottom: 100px;
+                    padding: 12px 30px;
+                }
+                .lines-two-header {
+                    div {
+                        p {
+                            span {
+                                @include adaptiv-font(20, 10);
+                                font-weight: bold;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                .lines-two-text-header {
+                    p {
+                        span {
+                        }
+                    }
+                }
+            }
         }
     }
 }
 @media (max-width: 1202px) {
-    .wrapper {
-        max-width: 940px;
+    //! 940
 
-        nav {
-            ul {
-                li {
-                    margin-left: 20px;
+    header {
+        .gradient {
+            .wrapper {
+                max-width: 940px;
+                nav {
+                    .a {
+                        .logo {
+                        }
+                    }
+                    #switch {
+                        #switch:checked ~ ul {
+                        }
+                    }
+                    .burger {
+                        img {
+                        }
+                    }
+                    ul {
+                        li {
+                            margin-left: 20px;
+                            a {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+                .big-over-title {
+                }
+                .big-title {
+                }
+                .line-one-header {
+                    margin-top: 140px;
+                    margin-bottom: 30px;
+                }
+                .btn-header {
+                    margin-top: 50px;
+                    margin-bottom: 100px;
+                    padding: 12px 30px;
+                }
+                .lines-two-header {
+                    text-align: center;
+                    div {
+                        text-align: left;
+                        max-width: 200px;
+                        p {
+                            span {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                .lines-two-text-header {
+                    p {
+                        span {
+                        }
+                    }
                 }
             }
-        }
-        .big-over-title {
-            padding-top: 140px;
-            padding-bottom: 30px;
-        }
-        .btn-header {
-            margin-top: 50px;
-            margin-bottom: 100px;
-            padding: 12px 30px;
         }
     }
 }
-
 @media (max-width: 940px) {
-    .wrapper {
-        max-width: 600px;
-
-        nav {
-            ul {
-                left: 150px;
-                li {
-                    margin-left: 20px;
+    header {
+        .gradient {
+            .wrapper {
+                max-width: 600px;
+                nav {
+                    .a {
+                        .logo {
+                        }
+                    }
+                    #switch {
+                        #switch:checked ~ ul {
+                        }
+                    }
+                    .burger {
+                        img {
+                        }
+                    }
+                    ul {
+                        left: 250px;
+                        li {
+                            margin-left: 10px;
+                            a {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+                .big-over-title {
+                }
+                .big-title {
+                    padding-bottom: 0px;
+                    line-height: 100px;
+                }
+                .line-one-header {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                .btn-header {
+                    margin-top: 10px;
+                    margin-bottom: 50px;
+                    padding: 8px 20px;
+                }
+                .lines-two-header {
+                    div {
+                        max-width: 110px;
+                        p {
+                            span {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                .lines-two-text-header {
+                    p {
+                        span {
+                        }
+                    }
                 }
             }
-        }
-        .big-over-title {
-            padding-top: 140px;
-            padding-bottom: 30px;
-        }
-        .btn-header {
-            margin-top: 50px;
-            margin-bottom: 100px;
-            padding: 12px 30px;
         }
     }
 }
 @media (max-width: 640px) {
-    .wrapper {
-        max-width: 400px;
-
-        nav {
-            ul {
-                display: none;
-                li {
-                    margin-left: 20px;
-                }
-            }
-            .c {
-                display: block;
-                #switch {
-                    display: none;
-                    &:checked ~ ul {
+    header {
+        .gradient {
+            .wrapper {
+                max-width: 400px;
+                nav {
+                    .a {
+                        .logo {
+                        }
+                    }
+                    #switch {
+                        #switch:checked ~ ul {
+                        }
+                    }
+                    .burger {
+                        position: relative;
+                        bottom: 35px;
+                        left: 350px;
                         display: block;
+                        img {
+                        }
+                    }
+                    ul {
+                        left: 1510px;
+                        li {
+                            a {
+                                img {
+                                }
+                            }
+                        }
                     }
                 }
-                .burger {
+                .big-over-title {
+                }
+                .big-title {
+                }
+                .line-one-header {
+                }
+                .btn-header {
+                }
+                .lines-two-header {
+                    div {
+                        p {
+                            span {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                .lines-two-text-header {
+                    p {
+                        span {
+                        }
+                    }
                 }
             }
-        }
-        .big-over-title {
-            padding-top: 140px;
-            padding-bottom: 30px;
-        }
-        .btn-header {
-            margin-top: 50px;
-            margin-bottom: 100px;
-            padding: 12px 30px;
         }
     }
 }
 @media (max-width: 470px) {
-    .wrapper {
-        max-width: 300px;
+    header {
+        .gradient {
+            .wrapper {
+                max-width: 300px;
+                nav {
+                    .a {
+                        .logo {
+                        }
+                    }
+                    #switch {
+                        #switch:checked ~ ul {
+                        }
+                    }
+                    .burger {
+                        left: 250px;
+                        img {
+                        }
+                    }
+                    ul {
+                        li {
+                            a {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+                .big-over-title {
+                }
+                .big-title {
+                }
+                .line-one-header {
+                }
+                .btn-header {
+                }
+                .lines-two-header {
+                    div {
+                        p {
+                            span {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                .lines-two-text-header {
+                    p {
+                        span {
+                        }
+                    }
+                }
+            }
+        }
     }
 }
