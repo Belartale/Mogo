@@ -1,0 +1,23 @@
+@import "null-style.scss"; //Сброс стилей
+@import "general-classes.scss"; //Все классы
+
+//! begin
+//! story_about_us
+.story_about_us {
+    .wrapper {
+        margin-top: 90px;
+        margin-bottom: 110px;
+        .story_about_us-img {
+            display: flex;
+            .story_about_us-pc {
+                max-width: 380px;
+                color: $color-blue;
+            }
+            .story_about_us-pc-table {
+                margin: 0 30px;
+                max-width: 380px;
+                color: $color-blue;
+            }
+        }
+    }
+}
