@@ -127,13 +127,17 @@ select {
 
 @media (max-width: 767px) {
   .over-title {
-    font-size: calc( 16px + 13.6 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 16px + 13.6 * ((100vw - 320px) / 1202));
+    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .over-title {
-    font-size: calc( 16px + 8 * (100vw / 1202));
+    font-size: calc(
+ 16px + 8 * (100vw / 1202));
+    font-size: calc(16px + 8 * (100vw / 1202));
   }
 }
 
@@ -145,13 +149,17 @@ select {
 
 @media (max-width: 767px) {
   .title {
-    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 20px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc(20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .title {
-    font-size: calc( 20px + 10 * (100vw / 1202));
+    font-size: calc(
+ 20px + 10 * (100vw / 1202));
+    font-size: calc(20px + 10 * (100vw / 1202));
   }
 }
 
@@ -162,13 +170,16 @@ select {
 
 @media (max-width: 767px) {
   .text-under-line {
-    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 10px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc(10px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .text-under-line {
-    font-size: calc( 10px + 5 * (100vw / 1202));
+    font-size: calc(
+ 10px + 5 * (100vw / 1202));
   }
 }
 
@@ -196,13 +207,15 @@ header .gradient .wrapper nav .a .logo {
 
 @media (max-width: 767px) {
   header .gradient .wrapper nav .a .logo {
-    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper nav .a .logo {
-    font-size: calc( 20px + 10 * (100vw / 1202));
+    font-size: calc(
+ 20px + 10 * (100vw / 1202));
   }
 }
 
@@ -244,13 +257,15 @@ header .gradient .wrapper nav ul li a {
 
 @media (max-width: 767px) {
   header .gradient .wrapper nav ul li a {
-    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper nav ul li a {
-    font-size: calc( 8px + 6 * (100vw / 1202));
+    font-size: calc(
+ 8px + 6 * (100vw / 1202));
   }
 }
 
@@ -267,13 +282,15 @@ header .gradient .wrapper .big-over-title {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .big-over-title {
-    font-size: calc( 15px + 96.9 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 15px + 96.9 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .big-over-title {
-    font-size: calc( 15px + 57 * (100vw / 1202));
+    font-size: calc(
+ 15px + 57 * (100vw / 1202));
   }
 }
 
@@ -287,13 +304,15 @@ header .gradient .wrapper .big-title {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .big-title {
-    font-size: calc( 30px + 204 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 30px + 204 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .big-title {
-    font-size: calc( 30px + 120 * (100vw / 1202));
+    font-size: calc(
+ 30px + 120 * (100vw / 1202));
   }
 }
 
@@ -315,13 +334,15 @@ header .gradient .wrapper .btn-header {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .btn-header {
-    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .btn-header {
-    font-size: calc( 8px + 6 * (100vw / 1202));
+    font-size: calc(
+ 8px + 6 * (100vw / 1202));
   }
 }
 
@@ -347,13 +368,15 @@ header .gradient .wrapper .lines-two-header div p {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .lines-two-header div p {
-    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .lines-two-header div p {
-    font-size: calc( 8px + 6 * (100vw / 1202));
+    font-size: calc(
+ 8px + 6 * (100vw / 1202));
   }
 }
 
@@ -363,13 +386,15 @@ header .gradient .wrapper .lines-two-header div p span {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .lines-two-header div p span {
-    font-size: calc( 10px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 10px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .lines-two-header div p span {
-    font-size: calc( 10px + 10 * (100vw / 1202));
+    font-size: calc(
+ 10px + 10 * (100vw / 1202));
   }
 }
 
@@ -398,13 +423,15 @@ header .gradient .wrapper .lines-two-header div:hover {
 
 @media (max-width: 1370px) and (max-width: 767px) {
   header .gradient .wrapper .lines-two-header div p span {
-    font-size: calc( 10px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc(
+ 10px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (max-width: 1370px) and (min-width: 767px) {
   header .gradient .wrapper .lines-two-header div p span {
-    font-size: calc( 10px + 10 * (100vw / 1202));
+    font-size: calc(
+ 10px + 10 * (100vw / 1202));
   }
 }
 
@@ -458,6 +485,65 @@ header .gradient .wrapper .lines-two-header div:hover {
   }
   header .gradient .wrapper .lines-two-header div {
     max-width: 110px;
+    font-size: calc(10px + 5 * (100vw / 1202));
+  }
+}
+
+.story_about_us {
+  margin-top: 90px;
+  margin-bottom: 110px;
+}
+
+.story_about_us .wrapper .story_about_us-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-tra {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-tra:hover {
+  bottom: 10px;
+  right: 10px;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-pc {
+  max-width: 380px;
+  background-color: #95e1d3;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-pc-table {
+  margin: 0 30px;
+  max-width: 380px;
+  background-color: #95e1d3;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-table {
+  max-width: 380px;
+  background-color: #95e1d3;
+}
+
+@media (max-width: 1370px) {
+  .story_about_us .wrapper {
+    max-width: 1202px;
+  }
+}
+
+@media (max-width: 1202px) {
+  .story_about_us .wrapper {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 940px) {
+  .story_about_us .wrapper {
+    max-width: 640px;
   }
 }
 
@@ -473,6 +559,23 @@ header .gradient .wrapper .lines-two-header div:hover {
   }
   header .gradient .wrapper nav ul {
     left: 1510px;
+  .story_about_us .wrapper {
+    max-width: 470px;
+  }
+  .story_about_us .wrapper .story_about_us-img {
+    display: block;
+  }
+  .story_about_us .wrapper .story_about_us-img .story_about_us-pc {
+    margin: 0 auto;
+  }
+  .story_about_us .wrapper .story_about_us-img .story_about_us-pc-table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .story_about_us .wrapper .story_about_us-img .story_about_us-table {
+    margin: 0 auto;
   }
 }
 
@@ -482,5 +585,18 @@ header .gradient .wrapper .lines-two-header div:hover {
   }
   header .gradient .wrapper nav .burger {
     left: 250px;
+  .story_about_us {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .story_about_us .wrapper {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 360px) {
+  .story_about_us {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }

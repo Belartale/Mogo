@@ -113,6 +113,37 @@ header {
                         );
                     }
                 }
+//asd
+//! begin
+//! story_about_us
+.story_about_us {
+    margin-top: 90px;
+    margin-bottom: 110px;
+    .wrapper {
+        .story_about_us-img {
+            display: flex;
+            .story_about_us-img-tra {
+                position: relative;
+                bottom: 0px;
+                right: 0px;
+                transition-duration: 1s;
+            }
+            .story_about_us-img-tra:hover {
+                bottom: 10px;
+                right: 10px;
+            }
+            .story_about_us-pc {
+                max-width: 380px;
+                background-color: $color-blue;
+            }
+            .story_about_us-pc-table {
+                margin: 0 30px;
+                max-width: 380px;
+                background-color: $color-blue;
+            }
+            .story_about_us-table {
+                max-width: 380px;
+                background-color: $color-blue;
             }
         }
     }
@@ -176,6 +207,19 @@ header {
                         span {
                         }
                     }
+    .story_about_us {
+        .wrapper {
+            max-width: 1202px;
+            .story_about_us-img {
+                .story_about_us-img-tra {
+                }
+                .story_about_us-img-tra:hover {
+                }
+                .story_about_us-pc {
+                }
+                .story_about_us-pc-table {
+                }
+                .story_about_us-table {
                 }
             }
         }
@@ -242,6 +286,19 @@ header {
                         span {
                         }
                     }
+    .story_about_us {
+        .wrapper {
+            max-width: 940px;
+            .story_about_us-img {
+                .story_about_us-img-tra {
+                }
+                .story_about_us-img-tra:hover {
+                }
+                .story_about_us-pc {
+                }
+                .story_about_us-pc-table {
+                }
+                .story_about_us-table {
                 }
             }
         }
@@ -307,6 +364,19 @@ header {
                         span {
                         }
                     }
+    .story_about_us {
+        .wrapper {
+            max-width: 640px;
+            .story_about_us-img {
+                .story_about_us-img-tra {
+                }
+                .story_about_us-img-tra:hover {
+                }
+                .story_about_us-pc {
+                }
+                .story_about_us-pc-table {
+                }
+                .story_about_us-table {
                 }
             }
         }
@@ -367,6 +437,26 @@ header {
                         span {
                         }
                     }
+    .story_about_us {
+        .wrapper {
+            max-width: 470px;
+            .story_about_us-img {
+                display: block;
+                .story_about_us-img-tra {
+                }
+                .story_about_us-img-tra:hover {
+                }
+                .story_about_us-pc {
+                    margin: 0 auto;
+                }
+                .story_about_us-pc-table {
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                .story_about_us-table {
+                    margin: 0 auto;
                 }
             }
         }
@@ -423,8 +513,29 @@ header {
                         span {
                         }
                     }
+    .story_about_us {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        .wrapper {
+            max-width: 320px;
+            .story_about_us-img {
+                .story_about_us-img-tra {
+                }
+                .story_about_us-img-tra:hover {
+                }
+                .story_about_us-pc {
+                }
+                .story_about_us-pc-table {
+                }
+                .story_about_us-table {
                 }
             }
         }
+    }
+}
+@media (max-width: 360px) {
+    .story_about_us {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
