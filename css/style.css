@@ -96,6 +96,25 @@ select {
   display: inline-block;
 }
 
+.line-under-title {
+  margin: 0 auto;
+  height: 3px;
+  width: 60px;
+  background-color: #f38181;
+}
+
+.text-under-line {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0 50px;
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
 .center {
   text-align: center;
 }
@@ -108,13 +127,13 @@ select {
 
 @media (max-width: 767px) {
   .over-title {
-    font-size: calc( 20px + 6.8 * ((100vw - 320px) / 1202));
+    font-size: calc( 16px + 13.6 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .over-title {
-    font-size: calc( 20px + 4 * (100vw / 1202));
+    font-size: calc( 16px + 8 * (100vw / 1202));
   }
 }
 
@@ -126,13 +145,30 @@ select {
 
 @media (max-width: 767px) {
   .title {
-    font-size: calc( 26px + 6.8 * ((100vw - 320px) / 1202));
+    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .title {
-    font-size: calc( 26px + 4 * (100vw / 1202));
+    font-size: calc( 20px + 10 * (100vw / 1202));
+  }
+}
+
+.text-under-line {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+
+@media (max-width: 767px) {
+  .text-under-line {
+    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .text-under-line {
+    font-size: calc( 10px + 5 * (100vw / 1202));
   }
 }
 
