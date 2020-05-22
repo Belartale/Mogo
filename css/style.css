@@ -127,13 +127,13 @@ select {
 
 @media (max-width: 767px) {
   .over-title {
-    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1202));
+    font-size: calc( 16px + 13.6 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .over-title {
-    font-size: calc(16px + 8 * (100vw / 1202));
+    font-size: calc( 16px + 8 * (100vw / 1202));
   }
 }
 
@@ -145,13 +145,13 @@ select {
 
 @media (max-width: 767px) {
   .title, .numbers div .wrapper .numbers-row div .numbers-number, .numbers div .wrapper .numbers-row div .numbers-text {
-    font-size: calc(20px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .title, .numbers div .wrapper .numbers-row div .numbers-number, .numbers div .wrapper .numbers-row div .numbers-text {
-    font-size: calc(20px + 10 * (100vw / 1202));
+    font-size: calc( 20px + 10 * (100vw / 1202));
   }
 }
 
@@ -162,13 +162,13 @@ select {
 
 @media (max-width: 767px) {
   .text-under-line {
-    font-size: calc(10px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .text-under-line {
-    font-size: calc(10px + 5 * (100vw / 1202));
+    font-size: calc( 10px + 5 * (100vw / 1202));
   }
 }
 
@@ -300,13 +300,13 @@ select {
 
 @media (max-width: 767px) {
   .over-title {
-    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1202));
+    font-size: calc( 16px + 13.6 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .over-title {
-    font-size: calc(16px + 8 * (100vw / 1202));
+    font-size: calc( 16px + 8 * (100vw / 1202));
   }
 }
 
@@ -318,13 +318,13 @@ select {
 
 @media (max-width: 767px) {
   .title, .numbers div .wrapper .numbers-row div .numbers-number, .numbers div .wrapper .numbers-row div .numbers-text {
-    font-size: calc(20px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .title, .numbers div .wrapper .numbers-row div .numbers-number, .numbers div .wrapper .numbers-row div .numbers-text {
-    font-size: calc(20px + 10 * (100vw / 1202));
+    font-size: calc( 20px + 10 * (100vw / 1202));
   }
 }
 
@@ -335,19 +335,19 @@ select {
 
 @media (max-width: 767px) {
   .text-under-line {
-    font-size: calc(10px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .text-under-line {
-    font-size: calc(10px + 5 * (100vw / 1202));
+    font-size: calc( 10px + 5 * (100vw / 1202));
   }
 }
 
 header .gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(232, 129, 130, 0.9)), to(rgba(241, 217, 138, 0.9))), url(../img/header-background.png);
-  background: linear-gradient(rgba(232, 129, 130, 0.9), rgba(241, 217, 138, 0.9)), url(../img/header-background.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(232, 129, 130, 0.9)), to(rgba(241, 217, 138, 0.9))) no-repeat, url(../img/header-background.png);
+  background: linear-gradient(rgba(232, 129, 130, 0.9), rgba(241, 217, 138, 0.9)) no-repeat, url(../img/header-background.png);
   background-size: cover;
   background-position: center;
 }
@@ -365,13 +365,13 @@ header .gradient .wrapper nav .a .logo {
 
 @media (max-width: 767px) {
   header .gradient .wrapper nav .a .logo {
-    font-size: calc(20px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper nav .a .logo {
-    font-size: calc(20px + 10 * (100vw / 1202));
+    font-size: calc( 20px + 10 * (100vw / 1202));
   }
 }
 
@@ -413,13 +413,13 @@ header .gradient .wrapper nav ul li a {
 
 @media (max-width: 767px) {
   header .gradient .wrapper nav ul li a {
-    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1202));
+    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper nav ul li a {
-    font-size: calc(8px + 6 * (100vw / 1202));
+    font-size: calc( 8px + 6 * (100vw / 1202));
   }
 }
 
@@ -436,13 +436,13 @@ header .gradient .wrapper .big-over-title {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .big-over-title {
-    font-size: calc(15px + 96.9 * ((100vw - 320px) / 1202));
+    font-size: calc( 15px + 96.9 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .big-over-title {
-    font-size: calc(15px + 57 * (100vw / 1202));
+    font-size: calc( 15px + 57 * (100vw / 1202));
   }
 }
 
@@ -456,13 +456,13 @@ header .gradient .wrapper .big-title {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .big-title {
-    font-size: calc(30px + 204 * ((100vw - 320px) / 1202));
+    font-size: calc( 30px + 204 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .big-title {
-    font-size: calc(30px + 120 * (100vw / 1202));
+    font-size: calc( 30px + 120 * (100vw / 1202));
   }
 }
 
@@ -484,13 +484,13 @@ header .gradient .wrapper .btn-header {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .btn-header {
-    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1202));
+    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .btn-header {
-    font-size: calc(8px + 6 * (100vw / 1202));
+    font-size: calc( 8px + 6 * (100vw / 1202));
   }
 }
 
@@ -516,13 +516,13 @@ header .gradient .wrapper .lines-two-header div p {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .lines-two-header div p {
-    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1202));
+    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .lines-two-header div p {
-    font-size: calc(8px + 6 * (100vw / 1202));
+    font-size: calc( 8px + 6 * (100vw / 1202));
   }
 }
 
@@ -532,13 +532,13 @@ header .gradient .wrapper .lines-two-header div p span {
 
 @media (max-width: 767px) {
   header .gradient .wrapper .lines-two-header div p span {
-    font-size: calc(10px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc( 10px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   header .gradient .wrapper .lines-two-header div p span {
-    font-size: calc(10px + 10 * (100vw / 1202));
+    font-size: calc( 10px + 10 * (100vw / 1202));
   }
 }
 
@@ -567,13 +567,13 @@ header .gradient .wrapper .lines-two-header div:hover {
 
 @media (max-width: 1370px) and (max-width: 767px) {
   header .gradient .wrapper .lines-two-header div p span {
-    font-size: calc(10px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc( 10px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (max-width: 1370px) and (min-width: 767px) {
   header .gradient .wrapper .lines-two-header div p span {
-    font-size: calc(10px + 10 * (100vw / 1202));
+    font-size: calc( 10px + 10 * (100vw / 1202));
   }
 }
 
@@ -777,13 +777,13 @@ header .gradient .wrapper .lines-two-header div:hover {
 
 @media (max-width: 767px) {
   .numbers div .wrapper .numbers-row div .numbers-number {
-    font-size: calc(25px + 79.9 * ((100vw - 320px) / 1202));
+    font-size: calc( 25px + 79.9 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .numbers div .wrapper .numbers-row div .numbers-number {
-    font-size: calc(25px + 47 * (100vw / 1202));
+    font-size: calc( 25px + 47 * (100vw / 1202));
   }
 }
 
@@ -795,13 +795,13 @@ header .gradient .wrapper .lines-two-header div:hover {
 
 @media (max-width: 767px) {
   .numbers div .wrapper .numbers-row div .numbers-text {
-    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1202));
+    font-size: calc( 8px + 10.2 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .numbers div .wrapper .numbers-row div .numbers-text {
-    font-size: calc(8px + 6 * (100vw / 1202));
+    font-size: calc( 8px + 6 * (100vw / 1202));
   }
 }
 

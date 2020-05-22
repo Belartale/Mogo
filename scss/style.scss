@@ -7,7 +7,7 @@
 //! header
 header {
     .gradient {
-        background: linear-gradient($), url(../img/header-background.png);
+        background: $gradient, url(../img/header-background.png);
         background-size: cover;
         background-position: center;
 
