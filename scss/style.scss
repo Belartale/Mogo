@@ -164,7 +164,6 @@ header {
         }
     }
 }
-
 @media (max-width: 1202px) {
     //! 940
     header {
@@ -385,28 +384,49 @@ header {
     .wrapper {
         .story_about_us-img {
             display: flex;
-            .story_about_us-img-tra {
-                position: relative;
-                bottom: 0px;
-                right: 0px;
-                transition-duration: 1s;
-            }
-            .story_about_us-img-tra:hover {
-                bottom: 10px;
-                right: 10px;
-            }
-            .story_about_us-pc {
-                max-width: 380px;
+            justify-content: space-between;
+            ////////////////////////todo 380
+            .story_about_us-img-behind {
+                margin: 0px 15px;
+                height: 250px;
+                width: 380px;
                 background-color: $color-blue;
-            }
-            .story_about_us-pc-table {
-                margin: 0 30px;
-                max-width: 380px;
-                background-color: $color-blue;
-            }
-            .story_about_us-table {
-                max-width: 380px;
-                background-color: $color-blue;
+                .story_about_us-img-in:hover {
+                    position: relative;
+                    bottom: 10px;
+                    right: 10px;
+                    background: $gradient;
+                }
+                .story_about_us-img-one {
+                    @extend %story_about_us-img-in;
+                    background: url(../img/story_about_us-img-one.png);
+                    &:hover {
+                        bottom: 10px;
+                        right: 10px;
+                        background: $gradient,
+                            url(../img/story_about_us-img-one.png);
+                    }
+                }
+                .story_about_us-img-two {
+                    @extend %story_about_us-img-in;
+                    background: url(../img/story_about_us-img-two.png);
+                    &:hover {
+                        bottom: 10px;
+                        right: 10px;
+                        background: $gradient,
+                            url(../img/story_about_us-img-two.png);
+                    }
+                }
+                .story_about_us-img-three {
+                    @extend %story_about_us-img-in;
+                    background: url(../img/story_about_us-img-three.png);
+                    &:hover {
+                        bottom: 10px;
+                        right: 10px;
+                        background: $gradient,
+                            url(../img/story_about_us-img-three.png);
+                    }
+                }
             }
         }
     }
@@ -416,18 +436,6 @@ header {
     .story_about_us {
         .wrapper {
             max-width: 1202px;
-            .story_about_us-img {
-                .story_about_us-img-tra {
-                }
-                .story_about_us-img-tra:hover {
-                }
-                .story_about_us-pc {
-                }
-                .story_about_us-pc-table {
-                }
-                .story_about_us-table {
-                }
-            }
         }
     }
 }
@@ -435,18 +443,6 @@ header {
     .story_about_us {
         .wrapper {
             max-width: 940px;
-            .story_about_us-img {
-                .story_about_us-img-tra {
-                }
-                .story_about_us-img-tra:hover {
-                }
-                .story_about_us-pc {
-                }
-                .story_about_us-pc-table {
-                }
-                .story_about_us-table {
-                }
-            }
         }
     }
 }
@@ -455,15 +451,23 @@ header {
         .wrapper {
             max-width: 640px;
             .story_about_us-img {
-                .story_about_us-img-tra {
-                }
-                .story_about_us-img-tra:hover {
-                }
-                .story_about_us-pc {
-                }
-                .story_about_us-pc-table {
-                }
-                .story_about_us-table {
+                ////////////////////////todo 380
+                .story_about_us-img-behind {
+                    height: 125px;
+                    .story_about_us-img-in:hover {
+                    }
+                    .story_about_us-img-one {
+                        &:hover {
+                        }
+                    }
+                    .story_about_us-img-two {
+                        &:hover {
+                        }
+                    }
+                    .story_about_us-img-three {
+                        &:hover {
+                        }
+                    }
                 }
             }
         }
@@ -471,30 +475,38 @@ header {
 }
 @media (max-width: 640px) {
     .story_about_us {
+        margin-top: 70px;
+        margin-bottom: 90px;
         .wrapper {
             max-width: 470px;
             .story_about_us-img {
                 display: block;
-                .story_about_us-img-tra {
-                }
-                .story_about_us-img-tra:hover {
-                }
-                .story_about_us-pc {
-                    margin: 0 auto;
-                }
-                .story_about_us-pc-table {
-                    margin-right: auto;
-                    margin-left: auto;
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                }
-                .story_about_us-table {
-                    margin: 0 auto;
+                ////////////////////////todo 380
+                .story_about_us-img-behind {
+                    position: relative;
+                    margin: 30px auto;
+                    width: 380px;
+                    height: 250px;
+                    .story_about_us-img-in:hover {
+                    }
+                    .story_about_us-img-one {
+                        &:hover {
+                        }
+                    }
+                    .story_about_us-img-two {
+                        &:hover {
+                        }
+                    }
+                    .story_about_us-img-three {
+                        &:hover {
+                        }
+                    }
                 }
             }
         }
     }
 }
+
 @media (max-width: 470px) {
     .story_about_us {
         margin-top: 50px;
@@ -502,15 +514,24 @@ header {
         .wrapper {
             max-width: 320px;
             .story_about_us-img {
-                .story_about_us-img-tra {
-                }
-                .story_about_us-img-tra:hover {
-                }
-                .story_about_us-pc {
-                }
-                .story_about_us-pc-table {
-                }
-                .story_about_us-table {
+                .story_about_us-img-behind {
+                    margin: 15px auto;
+                    width: 200px;
+                    height: 150px;
+                    .story_about_us-img-in:hover {
+                    }
+                    .story_about_us-img-one {
+                        &:hover {
+                        }
+                    }
+                    .story_about_us-img-two {
+                        &:hover {
+                        }
+                    }
+                    .story_about_us-img-three {
+                        &:hover {
+                        }
+                    }
                 }
             }
         }
