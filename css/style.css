@@ -191,29 +191,34 @@ header .gradient {
   background-position: center;
 }
 
+header .gradient .wrapper .logo-div {
+  padding-top: 40px;
+  position: absolute;
+}
+
+header .gradient .wrapper .logo-div .logo {
+  font: bold 30px "Montserrat", sans-serif;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  header .gradient .wrapper .logo-div .logo {
+    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  header .gradient .wrapper .logo-div .logo {
+    font-size: calc( 20px + 10 * (100vw / 1202));
+  }
+}
+
 header .gradient .wrapper nav {
   padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 1000;
-}
-
-header .gradient .wrapper nav .logo-div .logo {
-  font: bold 30px "Montserrat", sans-serif;
-  color: white;
-}
-
-@media (max-width: 767px) {
-  header .gradient .wrapper nav .logo-div .logo {
-    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
-  }
-}
-
-@media (min-width: 767px) {
-  header .gradient .wrapper nav .logo-div .logo {
-    font-size: calc( 20px + 10 * (100vw / 1202));
-  }
 }
 
 header .gradient .wrapper nav #menu {
@@ -225,6 +230,7 @@ header .gradient .wrapper nav #menu:checked ~ ul {
 }
 
 header .gradient .wrapper nav .burger {
+  padding-top: 40px;
   position: relative;
   display: none;
   height: 40px;

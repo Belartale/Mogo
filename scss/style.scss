@@ -9,17 +9,20 @@ header {
         background-size: cover;
         background-position: center;
         .wrapper {
+            .logo-div {
+                padding-top: 40px;
+                position: absolute;
+                .logo {
+                    font: bold 30px $font-one;
+                    @include adaptiv-font(30, 20);
+                    color: $color-write;
+                }
+            }
             nav {
                 padding-top: 30px;
                 display: flex;
                 z-index: 1000;
-                .logo-div {
-                    .logo {
-                        font: bold 30px $font-one;
-                        @include adaptiv-font(30, 20);
-                        color: $color-write;
-                    }
-                }
+
                 #menu {
                     display: none;
                 }
@@ -27,6 +30,7 @@ header {
                     display: block;
                 }
                 .burger {
+                    padding-top: 40px;
                     position: relative;
                     display: none;
                     height: 40px;
@@ -276,11 +280,6 @@ header {
                 nav {
                     display: inline;
                     position: fixed;
-                    .logo-div {
-                        .logo {
-                            //todo
-                        }
-                    }
                     .burger {
                         position: relative;
                         bottom: 35px;
