@@ -199,19 +199,19 @@ header .gradient .wrapper nav {
   z-index: 1000;
 }
 
-header .gradient .wrapper nav .a .logo {
+header .gradient .wrapper nav .logo-div .logo {
   font: bold 30px "Montserrat", sans-serif;
   color: white;
 }
 
 @media (max-width: 767px) {
-  header .gradient .wrapper nav .a .logo {
+  header .gradient .wrapper nav .logo-div .logo {
     font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  header .gradient .wrapper nav .a .logo {
+  header .gradient .wrapper nav .logo-div .logo {
     font-size: calc( 20px + 10 * (100vw / 1202));
   }
 }

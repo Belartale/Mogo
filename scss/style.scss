@@ -13,7 +13,7 @@ header {
                 padding-top: 30px;
                 display: flex;
                 z-index: 1000;
-                .a {
+                .logo-div {
                     .logo {
                         font: bold 30px $font-one;
                         @include adaptiv-font(30, 20);
@@ -276,6 +276,11 @@ header {
                 nav {
                     display: inline;
                     position: fixed;
+                    .logo-div {
+                        .logo {
+                            //todo
+                        }
+                    }
                     .burger {
                         position: relative;
                         bottom: 35px;
