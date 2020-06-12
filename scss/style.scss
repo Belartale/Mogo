@@ -15,12 +15,27 @@
             .what_we_do-half-one {
             }
             .what_we_do-half-two {
+                details {
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: solid 1px #e5e5e5;
+                }
                 details summary::-webkit-details-marker {
                     display: none;
-                    summary {
-                        img {
-                        }
+                }
+                summary {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 5px;
                     }
+                }
+                p {
+                    //! max-height: 185px;
+                    //! overflow: auto;
+                    padding: 10px;
+                    border-top: solid 1px #e5e5e5;
+                    margin-top: 10px;
                 }
             }
         }
