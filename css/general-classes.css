@@ -16,7 +16,6 @@
 
 .line-under-title {
   margin: 0 auto;
-  margin-bottom: 45px;
   height: 3px;
   width: 60px;
   background-color: #f38181;
@@ -26,6 +25,7 @@
   max-width: 960px;
   margin: 0px auto;
   padding: 0 50px;
+  padding-top: 40px;
   padding-bottom: 90px;
 }
 

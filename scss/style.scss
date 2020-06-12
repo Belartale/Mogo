@@ -6,13 +6,31 @@
     padding-top: 60px;
     padding-bottom: 120px;
     .wrapper {
+        .what_we_do-two-half {
+            padding-top: 90px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 30px;
+            grid-template-rows: 380px;
+            .what_we_do-half-one {
+            }
+            .what_we_do-half-two {
+                details summary::-webkit-details-marker {
+                    display: none;
+                    summary {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 //! @media
 @media (max-width: 1202px) {
     .what_we_do {
-        padding-top: 70px;
+        padding-bottom: 90px;
         .wrapper {
             max-width: 940px;
         }
@@ -21,6 +39,7 @@
 @media (max-width: 940px) {
     .what_we_do {
         padding-top: 50px;
+        padding-bottom: 70px;
         .wrapper {
             max-width: 640px;
         }
@@ -30,6 +49,19 @@
     .what_we_do {
         .wrapper {
             max-width: 470px;
+            .what_we_do-two-half {
+                padding-top: 60px;
+                grid-template-columns: 1fr;
+                grid-row-gap: 0px;
+                grid-template-rows: 350px;
+                .what_we_do-half-one {
+                }
+                .what_we_do-half-two {
+                    details {
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }
@@ -37,6 +69,9 @@
     .what_we_do {
         .wrapper {
             max-width: 200px;
+            .what_we_do-two-half {
+                grid-template-rows: 170px;
+            }
         }
     }
 }
