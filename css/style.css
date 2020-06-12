@@ -105,6 +105,7 @@ select {
 
 .line-under-title {
   margin: 0 auto;
+  margin-bottom: 45px;
   height: 3px;
   width: 60px;
   background-color: #f38181;
