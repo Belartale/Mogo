@@ -87,6 +87,13 @@ select {
   }
 }
 
+/*
+1370 = 1202
+1202 = 940
+940 = 640
+640 = 470
+470 = 320
+*/
 .wrapper {
   max-width: 1202px;
   margin: 0 auto;
@@ -98,6 +105,7 @@ select {
 
 .line-under-title {
   margin: 0 auto;
+  margin-bottom: 45px;
   height: 3px;
   width: 60px;
   background-color: #f38181;
@@ -107,7 +115,6 @@ select {
   max-width: 960px;
   margin: 0px auto;
   padding: 0 50px;
-  padding-top: 40px;
   padding-bottom: 90px;
 }
 
@@ -182,6 +189,42 @@ select {
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+
+.three-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+@media (max-width: 767px) {
+  .three-title {
+    font-size: calc( 9px + 8.5 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .three-title {
+    font-size: calc( 9px + 5 * (100vw / 1202));
+  }
+}
+
+.three-text {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+
+@media (max-width: 767px) {
+  .three-text {
+    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .three-text {
+    font-size: calc( 10px + 5 * (100vw / 1202));
+  }
 }
 
 header .gradient {

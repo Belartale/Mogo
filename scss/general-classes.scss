@@ -5,6 +5,7 @@ $font-three: "Roboto", sans-serif;
 
 $color-write: white;
 $color-black: black;
+$color-black-light: #333333;
 $color-red: #f38181;
 $color-yellow: #fce38a;
 $color-gray: #999999;
@@ -14,6 +15,13 @@ $gradient: linear-gradient(rgba($color-red, 0.9), rgba($color-yellow, 0.9))
     no-repeat;
 //! all
 $maxWidth: 1202;
+/*
+1370 = 1202
+1202 = 940
+940 = 640
+640 = 470
+470 = 320
+*/
 .wrapper {
     max-width: 1202px;
     margin: 0 auto;
@@ -23,6 +31,7 @@ $maxWidth: 1202;
 }
 .line-under-title {
     margin: 0 auto;
+    margin-bottom: 45px;
     height: 3px;
     width: 60px;
     background-color: $color-red;
@@ -31,7 +40,7 @@ $maxWidth: 1202;
     max-width: 960px;
     margin: 0px auto;
     padding: 0 50px;
-    padding-top: 40px;
+
     padding-bottom: 90px;
     @extend %text;
 }
@@ -42,6 +51,12 @@ $maxWidth: 1202;
 .title {
     @extend %title;
     text-transform: uppercase;
+}
+.three-title {
+    @extend %three-title;
+}
+.three-text {
+    @extend %three-text;
 }
 .center {
     text-align: center;
@@ -118,4 +133,16 @@ $maxWidth: 1202;
     height: 100%;
     background-size: cover;
     background-position: center;
+}
+%three-title {
+    font-family: $font-one;
+    @include adaptiv-font(14, 9);
+    text-transform: uppercase;
+    color: $color-black-light;
+}
+%three-text {
+    font-weight: 400;
+    font-family: $font-three;
+    @include adaptiv-font(15, 10);
+    color: $color-gray;
 }
