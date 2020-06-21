@@ -251,3 +251,15 @@ select {
     font-size: calc( 16px + 8 * (100vw / 1202));
   }
 }
+
+.meet_our_team {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+.meet_our_team .wrapper .meet_our_team-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30px)[3];
+      grid-template-columns: repeat(3, 30px);
+}

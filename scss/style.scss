@@ -3,3 +3,13 @@
 ////////////////////////////////////////////////////////////////////
 //todooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 ////////////////////////////////////////////////////////////////////
+.meet_our_team {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    .wrapper {
+        .meet_our_team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 30px);
+        }
+    }
+}
