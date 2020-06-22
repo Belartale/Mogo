@@ -10,7 +10,7 @@
         .meet_our_team-img {
             display: grid;
             grid-template-columns: repeat(3, 380px);
-            grid-template-rows: repeat(2, 470px); //todo отрегу шир и вис
+            grid-template-rows: 470px auto; //todo отрегу шир и вис
             grid-gap: 31px;
             .meet_our_team-img-behind {
                 background-color: $color-blue;
@@ -63,7 +63,7 @@
             max-width: 970px;
             .meet_our_team-img {
                 grid-template-columns: repeat(3, 302px);
-                grid-template-rows: 350px 110px;
+                grid-template-rows: 350px auto;
             }
         }
     }
@@ -74,7 +74,7 @@
             max-width: 640px;
             .meet_our_team-img {
                 grid-template-columns: repeat(3, 192px);
-                grid-template-rows: repeat(2, 270px);
+                grid-template-rows: 270px auto;
             }
         }
     }
@@ -84,16 +84,28 @@
         .wrapper {
             max-width: 470px;
             .meet_our_team-img {
-                .meet_our_team-img-grid-one {
-                    //todo1111111111111111111111
+                position: relative;
+                left: 140px;
+                grid-template-columns: repeat(1, 192px);
+                grid-template-rows: 270px auto 270px auto 270px auto;
+                grid-gap: 31px;
+                div:nth-of-type(1) {
+                    order: 1;
                 }
-                .meet_our_team-img-grid-two {
+                div:nth-of-type(2) {
+                    order: 3;
                 }
-                .meet_our_team-img-grid-four {
+                div:nth-of-type(3) {
+                    order: 5;
                 }
-                .meet_our_team-img-grid-five {
+                div:nth-of-type(4) {
+                    order: 2;
                 }
-                .meet_our_team-img-grid-six {
+                div:nth-of-type(5) {
+                    order: 4;
+                }
+                div:nth-of-type(6) {
+                    order: 6;
                 }
             }
         }
