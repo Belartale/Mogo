@@ -11,7 +11,7 @@
             display: grid;
             grid-template-columns: repeat(3, 380px);
             grid-template-rows: repeat(2, 470px); //todo отрегу шир и вис
-            grid-gap: 30px;
+            grid-gap: 31px;
             .meet_our_team-img-behind {
                 background-color: $color-blue;
                 .meet_our_team-img-one {
@@ -45,6 +45,71 @@
                     }
                 }
             }
+        }
+    }
+}
+
+//! @media
+@media (max-width: 1370px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 1202px;
+        }
+    }
+}
+@media (max-width: 1202px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 970px;
+            .meet_our_team-img {
+                grid-template-columns: repeat(3, 302px);
+                grid-template-rows: 350px 110px;
+            }
+        }
+    }
+}
+@media (max-width: 940px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 640px;
+            .meet_our_team-img {
+                grid-template-columns: repeat(3, 192px);
+                grid-template-rows: repeat(2, 270px);
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 470px;
+            .meet_our_team-img {
+                .meet_our_team-img-grid-one {
+                    //todo1111111111111111111111
+                }
+                .meet_our_team-img-grid-two {
+                }
+                .meet_our_team-img-grid-four {
+                }
+                .meet_our_team-img-grid-five {
+                }
+                .meet_our_team-img-grid-six {
+                }
+            }
+        }
+    }
+}
+@media (max-width: 470px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 360px;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 300px;
         }
     }
 }
