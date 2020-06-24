@@ -294,13 +294,25 @@ select {
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover .meet_our_team-img-in-block {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[4];
+      grid-template-columns: repeat(4, 56px);
+  -ms-grid-rows: 56px;
+      grid-template-rows: 56px;
+  grid-gap: 1px;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block {
   display: none;
-  position: relative;
-  top: 35%;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div {
+  background-color: #fce38a;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover {
+  background-color: black;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover {
@@ -318,13 +330,25 @@ select {
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover .meet_our_team-img-in-block {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[4];
+      grid-template-columns: repeat(4, 56px);
+  -ms-grid-rows: 56px;
+      grid-template-rows: 56px;
+  grid-gap: 1px;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block {
   display: none;
-  position: relative;
-  top: 35%;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div {
+  background-color: #fce38a;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover {
+  background-color: black;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover {
@@ -342,13 +366,25 @@ select {
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover .meet_our_team-img-in-block {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[4];
+      grid-template-columns: repeat(4, 56px);
+  -ms-grid-rows: 56px;
+      grid-template-rows: 56px;
+  grid-gap: 1px;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block {
   display: none;
-  position: relative;
-  top: 35%;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div {
+  background-color: #fce38a;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover {
+  background-color: black;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover {
@@ -391,13 +427,12 @@ select {
     max-width: 470px;
   }
   .meet_our_team .wrapper .meet_our_team-img {
-    position: relative;
-    left: 140px;
+    padding-left: 140px;
     -ms-grid-columns: (192px)[1];
         grid-template-columns: repeat(1, 192px);
     -ms-grid-rows: 270px auto 270px auto 270px auto;
         grid-template-rows: 270px auto 270px auto 270px auto;
-    grid-gap: 31px;
+    grid-gap: 20px;
   }
   .meet_our_team .wrapper .meet_our_team-img div:nth-of-type(1) {
     -webkit-box-ordinal-group: 2;
@@ -435,10 +470,16 @@ select {
   .meet_our_team .wrapper {
     max-width: 360px;
   }
+  .meet_our_team .wrapper .meet_our_team-img {
+    padding-left: 85px;
+  }
 }
 
 @media (max-width: 360px) {
   .meet_our_team .wrapper {
     max-width: 300px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img {
+    padding-left: 55px;
   }
 }

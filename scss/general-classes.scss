@@ -129,12 +129,20 @@ $maxWidth: 1202;
         right: 10px;
     }
     &:hover .meet_our_team-img-in-block {
-        display: block;
+        //display: block;
+        display: grid;
+        grid-template-columns: repeat(4, 56px);
+        grid-template-rows: 56px;
+        grid-gap: 1px;
     }
     .meet_our_team-img-in-block {
         display: none;
-        position: relative;
-        top: 35%;
+        div {
+            background-color: $color-yellow;
+            &:hover {
+                background-color: $color-red;
+            }
+        }
     }
 }
 

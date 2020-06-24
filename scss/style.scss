@@ -84,11 +84,10 @@
         .wrapper {
             max-width: 470px;
             .meet_our_team-img {
-                position: relative;
-                left: 140px;
+                padding-left: 140px;
                 grid-template-columns: repeat(1, 192px);
                 grid-template-rows: 270px auto 270px auto 270px auto;
-                grid-gap: 31px;
+                grid-gap: 20px;
                 div:nth-of-type(1) {
                     order: 1;
                 }
@@ -115,6 +114,9 @@
     .meet_our_team {
         .wrapper {
             max-width: 360px;
+            .meet_our_team-img {
+                padding-left: 85px;
+            }
         }
     }
 }
@@ -122,6 +124,9 @@
     .meet_our_team {
         .wrapper {
             max-width: 300px;
+            .meet_our_team-img {
+                padding-left: 55px;
+            }
         }
     }
 }
