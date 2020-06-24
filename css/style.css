@@ -115,7 +115,6 @@ select {
   max-width: 960px;
   margin: 0px auto;
   padding: 0 50px;
-  padding-top: 40px;
   padding-bottom: 90px;
 }
 
@@ -974,7 +973,6 @@ header .gradient .wrapper .lines-two-header div:hover {
     -ms-grid-rows: 60px;
         grid-template-rows: 60px;
     grid-column-gap: 0px;
-    grid-row-gap: 20px;
   }
   .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside {
     margin-top: 0px;
@@ -983,9 +981,7 @@ header .gradient .wrapper .lines-two-header div:hover {
     margin-bottom: 10px;
   }
   .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid-between {
-    visibility: hidden;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    display: none;
   }
 }
 
@@ -998,5 +994,90 @@ header .gradient .wrapper .lines-two-header div:hover {
 @media (max-width: 470px) {
   .amazing_services .wrapper {
     max-width: 200px;
+  }
+}
+
+.unique_design {
+  padding-top: 110px;
+  background: url(../img/unique_design-background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.unique_design .wrapper .unique_design-tablet {
+  top: 5px;
+  left: 340px;
+  display: inline-block;
+  position: relative;
+}
+
+.unique_design .wrapper .unique_design-phone {
+  top: 60px;
+  left: 220px;
+  display: inline-block;
+  position: relative;
+}
+
+@media (max-width: 1202px) {
+  .unique_design {
+    padding-top: 70px;
+  }
+  .unique_design .wrapper {
+    max-width: 940px;
+  }
+  .unique_design .wrapper .unique_design-tablet {
+    width: 400px;
+    left: 250px;
+  }
+  .unique_design .wrapper .unique_design-phone {
+    width: 250px;
+    left: 140px;
+  }
+}
+
+@media (max-width: 940px) {
+  .unique_design {
+    padding-top: 50px;
+  }
+  .unique_design .wrapper {
+    max-width: 640px;
+  }
+  .unique_design .wrapper .unique_design-tablet {
+    width: 350px;
+    left: 120px;
+  }
+  .unique_design .wrapper .unique_design-phone {
+    width: 200px;
+    top: 40px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .unique_design .wrapper {
+    max-width: 470px;
+  }
+  .unique_design .wrapper .unique_design-tablet {
+    width: 250px;
+    left: 90px;
+  }
+  .unique_design .wrapper .unique_design-phone {
+    width: 150px;
+    left: 25px;
+  }
+}
+
+@media (max-width: 470px) {
+  .unique_design .wrapper {
+    max-width: 200px;
+  }
+  .unique_design .wrapper .unique_design-tablet {
+    width: 125px;
+    left: 20px;
+  }
+  .unique_design .wrapper .unique_design-phone {
+    width: 70px;
+    top: 20px;
+    left: -10px;
   }
 }
