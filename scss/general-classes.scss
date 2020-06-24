@@ -129,12 +129,10 @@ $maxWidth: 1202;
         right: 10px;
     }
     &:hover .meet_our_team-img-in-block {
-        //display: block;
         display: grid;
         grid-template-columns: repeat(4, 56px);
         grid-template-rows: 56px;
         grid-gap: 1px;
-        margin: 0 auto;
     }
     .meet_our_team-img-in-block {
         display: none;
@@ -163,6 +161,17 @@ $maxWidth: 1202;
                 .meet_our_team-img-in-block-instagram-hover {
                     display: block;
                 }
+            }
+        }
+    }
+    @media (max-width: 940px) {
+        &:hover .meet_our_team-img-in-block {
+            display: grid;
+            grid-template-columns: repeat(4, 36px);
+            grid-template-rows: 36px;
+            grid-gap: 1px;
+            img {
+                height: 18px;
             }
         }
     }

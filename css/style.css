@@ -2612,7 +2612,6 @@ header .gradient .wrapper .lines-two-header div:hover {
   -ms-grid-rows: 56px;
       grid-template-rows: 56px;
   grid-gap: 1px;
-  margin: 0 auto;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block {
@@ -2657,6 +2656,21 @@ header .gradient .wrapper .lines-two-header div:hover {
   display: block;
 }
 
+@media (max-width: 940px) {
+  .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover .meet_our_team-img-in-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (36px)[4];
+        grid-template-columns: repeat(4, 36px);
+    -ms-grid-rows: 36px;
+        grid-template-rows: 36px;
+    grid-gap: 1px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover .meet_our_team-img-in-block img {
+    height: 18px;
+  }
+}
+
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/meet_our_team-img-one.png);
   background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/meet_our_team-img-one.png);
@@ -2679,7 +2693,6 @@ header .gradient .wrapper .lines-two-header div:hover {
   -ms-grid-rows: 56px;
       grid-template-rows: 56px;
   grid-gap: 1px;
-  margin: 0 auto;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block {
@@ -2724,6 +2737,21 @@ header .gradient .wrapper .lines-two-header div:hover {
   display: block;
 }
 
+@media (max-width: 940px) {
+  .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover .meet_our_team-img-in-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (36px)[4];
+        grid-template-columns: repeat(4, 36px);
+    -ms-grid-rows: 36px;
+        grid-template-rows: 36px;
+    grid-gap: 1px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover .meet_our_team-img-in-block img {
+    height: 18px;
+  }
+}
+
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/meet_our_team-img-two.png);
   background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/meet_our_team-img-two.png);
@@ -2746,7 +2774,6 @@ header .gradient .wrapper .lines-two-header div:hover {
   -ms-grid-rows: 56px;
       grid-template-rows: 56px;
   grid-gap: 1px;
-  margin: 0 auto;
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block {
@@ -2789,6 +2816,21 @@ header .gradient .wrapper .lines-two-header div:hover {
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-print-hover,
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-instagram-hover {
   display: block;
+}
+
+@media (max-width: 940px) {
+  .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover .meet_our_team-img-in-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (36px)[4];
+        grid-template-columns: repeat(4, 36px);
+    -ms-grid-rows: 36px;
+        grid-template-rows: 36px;
+    grid-gap: 1px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover .meet_our_team-img-in-block img {
+    height: 18px;
+  }
 }
 
 .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover {
