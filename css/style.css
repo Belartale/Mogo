@@ -1129,6 +1129,7 @@ header .gradient .wrapper .lines-two-header div:hover {
 
 @media (max-width: 1202px) {
   .what_we_do {
+    padding-top: 70px;
     padding-bottom: 90px;
   }
   .what_we_do .wrapper {
