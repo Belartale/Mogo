@@ -115,6 +115,7 @@ select {
   max-width: 960px;
   margin: 0px auto;
   padding: 0 50px;
+  padding-top: 40px;
   padding-bottom: 90px;
 }
 
@@ -903,5 +904,99 @@ header .gradient .wrapper .lines-two-header div:hover {
 @media (max-width: 360px) {
   .numbers div .wrapper {
     max-width: 300px;
+  }
+}
+
+.amazing_services {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+.amazing_services .wrapper .amazing_services-grid-indent {
+  margin-top: 65px;
+}
+
+.amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 175px;
+      grid-template-rows: 175px;
+  grid-column-gap: 70px;
+}
+
+.amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside {
+  margin-top: 50px;
+}
+
+.amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside img {
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-right: 25px;
+  float: left;
+}
+
+.amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid-between {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+@media (max-width: 1370px) {
+  .amazing_services .wrapper {
+    max-width: 1202px;
+  }
+}
+
+@media (max-width: 1202px) {
+  .amazing_services {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+  .amazing_services .wrapper {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 940px) {
+  .amazing_services {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .amazing_services .wrapper {
+    max-width: 640px;
+  }
+  .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    -ms-grid-rows: 60px;
+        grid-template-rows: 60px;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+  }
+  .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside {
+    margin-top: 0px;
+  }
+  .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside img {
+    margin-bottom: 10px;
+  }
+  .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid-between {
+    visibility: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .amazing_services .wrapper {
+    max-width: 470px;
+  }
+}
+
+@media (max-width: 470px) {
+  .amazing_services .wrapper {
+    max-width: 200px;
   }
 }
