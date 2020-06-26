@@ -265,6 +265,11 @@ select {
   }
 }
 
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(1), .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(2) {
+  background-size: cover;
+  background-position: center;
+}
+
 .some_of_our_work {
   padding-top: 110px;
   padding-bottom: 0px;
@@ -272,6 +277,32 @@ select {
 
 .some_of_our_work .wrapper {
   max-width: 1202;
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid .target {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(1) {
+  background-image: url(../img/some_of_our_work-man.png);
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(2) {
+  background-image: url(../img/some_of_our_work-roof.png);
 }
 
 @media (max-width: 1202px) {

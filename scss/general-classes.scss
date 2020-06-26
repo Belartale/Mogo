@@ -242,3 +242,7 @@ $maxWidth: 1202;
     @include adaptiv-font(24, 16);
     color: $color-gray;
 }
+%backg-center {
+    background-size: cover;
+    background-position: center;
+}
