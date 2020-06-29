@@ -1,87 +1,88 @@
 @import "null-style.scss"; //Сброс стилей
 @import "general-classes.scss"; //Все классы
 
-//! some_of_our_work
-.some_of_our_work {
+//! what_people_say
+.what_people_say {
     padding-top: 110px;
-    padding-bottom: 0px;
+    padding-bottom: 120px;
+    background-image: url(../img/what_people_say-img-background.png);
+    @extend %backg-center;
     .wrapper {
-        max-width: $maxWidth;
-        .some_of_our_work-grid {
-            width: 100%;
+        position: relative;
+        margin: 0 auto;
+        .what_people_say-grid {
+            padding-top: 80px;
             display: grid;
-            grid-template-columns: repeat(4, auto);
-            grid-template-rows: 390px 390px;
-            .target {
-                grid-column-start: 3;
-                grid-column-end: 4;
-                grid-row-start: 1;
-                grid-row-end: 3;
-            }
-            div:nth-of-type(1) {
-                background-image: url(../img/some_of_our_work-man.png);
-                @extend %backg-center;
-            }
-            div:nth-of-type(2) {
-                background-image: url(../img/some_of_our_work-roof.png);
-                @extend %backg-center;
-            }
-            div:nth-of-type(3) {
-                background-image: url(../img/some_of_our_work-medusa.png);
-                @extend %backg-center;
-            }
-            div:nth-of-type(4) {
-                background-image: url(../img/some_of_our_work-ceiling.png);
-                @extend %backg-center;
-            }
-            div:nth-of-type(5) {
-                background-image: url(../img/some_of_our_work-bridge.png);
-                @extend %backg-center;
-            }
-            div:nth-of-type(6) {
-                background-image: url(../img/some_of_our_work-open-roof.png);
-                @extend %backg-center;
-            }
-            div:nth-of-type(7) {
-                background-image: url(../img/some_of_our_work-high-rise.png);
-                @extend %backg-center;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: auto auto;
+            grid-column-gap: 80px;
+            grid-row-gap: 70px;
+            .what_people_say-grid-inside {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-column-gap: 30px;
+                img {
+                }
+                div {
+                    h4 {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                    p {
+                        padding-top: 25px;
+                    }
+                }
             }
         }
     }
 }
 //! @media
 @media (max-width: 1202px) {
-    .some_of_our_work {
+    .what_people_say {
         .wrapper {
             max-width: 970px;
+            .what_people_say-grid {
+            }
         }
     }
 }
 @media (max-width: 940px) {
-    .some_of_our_work {
+    .what_people_say {
         padding-top: 70px;
+        padding-bottom: 90px;
         .wrapper {
             max-width: 640px;
+            .what_people_say-grid {
+            }
         }
     }
 }
 @media (max-width: 640px) {
-    .some_of_our_work {
+    .what_people_say {
         padding-top: 50px;
+        padding-bottom: 70px;
         .wrapper {
             max-width: 470px;
+            .what_people_say-grid {
+                padding-top: 80px;
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                grid-template-rows: auto;
+                grid-column-gap: 0px;
+                grid-row-gap: 50px;
+            }
         }
     }
 }
 @media (max-width: 470px) {
-    .some_of_our_work {
+    .what_people_say {
         .wrapper {
             max-width: 360px;
         }
     }
 }
 @media (max-width: 360px) {
-    .some_of_our_work {
+    .what_people_say {
         .wrapper {
             max-width: 300px;
         }
