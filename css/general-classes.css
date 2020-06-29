@@ -51,6 +51,14 @@
   text-transform: uppercase;
 }
 
+.three-title-white {
+  color: white !important;
+}
+
+.three-text-white {
+  color: white !important;
+}
+
 .center {
   text-align: center;
 }
@@ -65,6 +73,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.box-center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .over-title, .line-name {
@@ -121,7 +137,7 @@
   }
 }
 
-.three-title {
+.three-title, .three-title-white {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -129,31 +145,31 @@
 }
 
 @media (max-width: 767px) {
-  .three-title {
+  .three-title, .three-title-white {
     font-size: calc( 9px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  .three-title {
+  .three-title, .three-title-white {
     font-size: calc( 9px + 5 * (100vw / 1202));
   }
 }
 
-.three-text {
+.three-text, .three-text-white {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   color: #999999;
 }
 
 @media (max-width: 767px) {
-  .three-text {
+  .three-text, .three-text-white {
     font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  .three-text {
+  .three-text, .three-text-white {
     font-size: calc( 10px + 5 * (100vw / 1202));
   }
 }

@@ -73,8 +73,16 @@ $maxWidth: 1202;
 .three-title {
     @extend %three-title;
 }
+.three-title-white {
+    @extend .three-title;
+    color: $color-write !important;
+}
 .three-text {
     @extend %three-text;
+}
+.three-text-white {
+    @extend .three-text;
+    color: $color-write !important;
 }
 .center {
     text-align: center;
@@ -83,6 +91,12 @@ $maxWidth: 1202;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.box-center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 //! @mixim
 //$maxWidth: 1202;
@@ -102,6 +116,7 @@ $maxWidth: 1202;
         );
     }
 }
+
 @mixin story_about_us-img-hover() {
     &:hover {
         bottom: 10px;
@@ -182,6 +197,41 @@ $maxWidth: 1202;
         }
     }
 }
+@mixin some_of_our_work-img-hover($urlBackgroundImage) {
+    & {
+        //some_of_our_work-img-behind
+        background-image: $urlBackgroundImage;
+        @extend %backg-center, .box-center, .center;
+        &:hover {
+            background: $gradient, $urlBackgroundImage;
+            @extend %backg-center, .box-center;
+        }
+        &:hover .some_of_our_work-img-inside {
+            display: block;
+        }
+        &:hover img {
+            margin: 0 auto;
+        }
+        & h3 {
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+    }
+    @media (max-width: 360px) {
+        & img {
+            height: 15px;
+        }
+        & h3 {
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+    }
+    @media (max-width: 320px) {
+        &:hover img {
+            display: none;
+        }
+    }
+}
 
 //! @extend
 %over-title {
@@ -240,4 +290,8 @@ $maxWidth: 1202;
     font-family: $font-three;
     @include adaptiv-font(24, 16);
     color: $color-gray;
+}
+%backg-center {
+    background-size: cover;
+    background-position: center;
 }
