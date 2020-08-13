@@ -264,8 +264,6 @@ body {
                 grid-template-columns: 1fr 1fr;
                 grid-column-gap: 30px;
                 grid-template-rows: 380px;
-                .what_we_do-half-one {
-                }
                 .what_we_do-half-two {
                     details {
                         padding: 10px;
@@ -806,759 +804,774 @@ body {
 }
 
 @media (max-width: 1370px) {
-    header {
-        .gradient {
-            .wrapper {
-                max-width: 1202px;
-                .big-over-title {
-                    padding-top: 140px;
-                    padding-bottom: 30px;
-                }
-                .big-title {
-                }
-                .line-one-header {
-                }
-                .btn-header {
-                    margin-top: 50px;
-                    margin-bottom: 100px;
-                    padding: 12px 30px;
-                }
-                .lines-two-header {
-                    div {
-                        p {
-                            span {
-                                @include adaptiv-font(20, 10);
-                                font-weight: bold;
+    body {
+        header {
+            .gradient {
+                .wrapper {
+                    max-width: 1202px;
+                    .big-over-title {
+                        padding-top: 140px;
+                        padding-bottom: 30px;
+                    }
+                    .big-title {
+                    }
+                    .line-one-header {
+                    }
+                    .btn-header {
+                        margin-top: 50px;
+                        margin-bottom: 100px;
+                        padding: 12px 30px;
+                    }
+                    .lines-two-header {
+                        div {
+                            p {
+                                span {
+                                    @include adaptiv-font(20, 10);
+                                    font-weight: bold;
+                                }
+                            }
+                            &:hover {
                             }
                         }
-                        &:hover {
-                        }
                     }
-                }
-                .lines-two-text-header {
-                    p {
-                        span {
+                    .lines-two-text-header {
+                        p {
+                            span {
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    .story_about_us {
-        .wrapper {
-            max-width: 1202px;
-        }
-    }
-    .numbers {
-        div {
+        .story_about_us {
             .wrapper {
                 max-width: 1202px;
-                .numbers-row {
-                    div {
+            }
+        }
+        .numbers {
+            div {
+                .wrapper {
+                    max-width: 1202px;
+                    .numbers-row {
+                        div {
+                        }
                     }
                 }
             }
         }
-    }
-    .amazing_services {
-        .wrapper {
-            max-width: 1202px;
+        .amazing_services {
+            .wrapper {
+                max-width: 1202px;
+            }
         }
-    }
-    .meet_our_team {
-        .wrapper {
-            max-width: 1202px;
+        .meet_our_team {
+            .wrapper {
+                max-width: 1202px;
+            }
         }
-    }
-    .chat_coment-twoo {
-        .wrapper {
-            max-width: 970px;
+        .chat_coment-twoo {
+            .wrapper {
+                max-width: 970px;
+            }
         }
     }
 }
 @media (max-width: 1202px) {
-    header {
-        .gradient {
-            .wrapper {
-                max-width: 940px;
-                nav {
-                    ul {
-                        li {
-                            margin-left: 20px;
-                            a {
-                                img {
+    body {
+        header {
+            .gradient {
+                .wrapper {
+                    max-width: 940px;
+                    nav {
+                        ul {
+                            li {
+                                margin-left: 20px;
+                                a {
+                                    img {
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                .big-over-title {
-                }
-                .big-title {
-                }
-                .line-one-header {
-                    margin-top: 140px;
-                    margin-bottom: 30px;
-                }
-                .btn-header {
-                    margin-top: 50px;
-                    margin-bottom: 100px;
-                    padding: 12px 30px;
-                }
-                .lines-two-header {
-                    text-align: center;
-                    div {
-                        text-align: left;
-                        max-width: 200px;
+                    .big-over-title {
                     }
-                }
-            }
-        }
-    }
-    .story_about_us {
-        .wrapper {
-            max-width: 940px;
-        }
-    }
-    .numbers {
-        div {
-            .wrapper {
-                max-width: 970px;
-                .numbers-row {
-                    div {
-                        padding-top: 90px;
-                        padding-bottom: 90px;
-                        .numbers-text {
-                            padding-bottom: 0px;
+                    .big-title {
+                    }
+                    .line-one-header {
+                        margin-top: 140px;
+                        margin-bottom: 30px;
+                    }
+                    .btn-header {
+                        margin-top: 50px;
+                        margin-bottom: 100px;
+                        padding: 12px 30px;
+                    }
+                    .lines-two-header {
+                        text-align: center;
+                        div {
+                            text-align: left;
+                            max-width: 200px;
                         }
                     }
                 }
             }
         }
-    }
-    .amazing_services {
-        padding-top: 70px;
-        padding-bottom: 90px;
-        .wrapper {
-            max-width: 940px;
-        }
-    }
-    .unique_design {
-        padding-top: 70px;
-        .wrapper {
-            max-width: 940px;
-            .unique_design-tablet {
-                width: 400px;
-                left: 250px;
-            }
-            .unique_design-phone {
-                width: 250px;
-                left: 140px;
+        .story_about_us {
+            .wrapper {
+                max-width: 940px;
             }
         }
-    }
-    .what_we_do {
-        padding-top: 70px;
-        padding-bottom: 90px;
-        .wrapper {
-            max-width: 940px;
-        }
-    }
-    .chat_coment {
-        .wrapper {
-            max-width: 970px;
-        }
-    }
-    .meet_our_team {
-        .wrapper {
-            max-width: 970px;
-            .meet_our_team-img {
-                grid-template-columns: repeat(3, 302px);
-                grid-template-rows: 350px auto;
+        .numbers {
+            div {
+                .wrapper {
+                    max-width: 970px;
+                    .numbers-row {
+                        div {
+                            padding-top: 90px;
+                            padding-bottom: 90px;
+                            .numbers-text {
+                                padding-bottom: 0px;
+                            }
+                        }
+                    }
+                }
             }
         }
-    }
-    .logos {
-        .wrapper {
-            max-width: 970px;
-        }
-    }
-    .some_of_our_work {
-        .some_of_our_work-img-grid {
-            display: grid;
-            grid-template-rows: repeat(2, 280px);
-        }
-    }
-    .what_people_say {
-        .wrapper {
-            max-width: 970px;
-        }
-    }
-    .latest_blog {
-        .wrapper {
-            max-width: 970px;
-            .latest_blog-grid {
-                grid-template-columns: repeat(3, 303px);
+        .amazing_services {
+            padding-top: 70px;
+            padding-bottom: 90px;
+            .wrapper {
+                max-width: 940px;
             }
         }
-    }
-    .details {
-        .wrapper {
-            max-width: 970px;
+        .unique_design {
+            padding-top: 70px;
+            .wrapper {
+                max-width: 940px;
+                .unique_design-tablet {
+                    width: 400px;
+                    left: 250px;
+                }
+                .unique_design-phone {
+                    width: 250px;
+                    left: 140px;
+                }
+            }
+        }
+        .what_we_do {
+            padding-top: 70px;
+            padding-bottom: 90px;
+            .wrapper {
+                max-width: 940px;
+            }
+        }
+        .chat_coment {
+            .wrapper {
+                max-width: 970px;
+            }
+        }
+        .meet_our_team {
+            .wrapper {
+                max-width: 970px;
+                .meet_our_team-img {
+                    grid-template-columns: repeat(3, 302px);
+                    grid-template-rows: 350px auto;
+                }
+            }
+        }
+        .logos {
+            .wrapper {
+                max-width: 970px;
+            }
+        }
+        .some_of_our_work {
+            .some_of_our_work-img-grid {
+                display: grid;
+                grid-template-rows: repeat(2, 280px);
+            }
+        }
+        .what_people_say {
+            .wrapper {
+                max-width: 970px;
+            }
+        }
+        .latest_blog {
+            .wrapper {
+                max-width: 970px;
+                .latest_blog-grid {
+                    grid-template-columns: repeat(3, 303px);
+                }
+            }
+        }
+        .details {
+            .wrapper {
+                max-width: 970px;
+            }
         }
     }
 }
 @media (max-width: 940px) {
-    header {
-        .gradient {
-            .wrapper {
-                max-width: 600px;
-                nav {
-                    ul {
-                        left: 130px;
-                        li {
-                            margin-left: 10px;
+    body {
+        header {
+            .gradient {
+                .wrapper {
+                    max-width: 600px;
+                    nav {
+                        ul {
+                            left: 130px;
+                            li {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                    .big-title {
+                        padding-bottom: 0px;
+                        line-height: 100px;
+                    }
+                    .line-one-header {
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                    }
+                    .btn-header {
+                        margin-top: 10px;
+                        margin-bottom: 50px;
+                        padding: 8px 20px;
+                    }
+                    .lines-two-header {
+                        div {
+                            max-width: 110px;
                         }
                     }
                 }
-
-                .big-title {
-                    padding-bottom: 0px;
-                    line-height: 100px;
-                }
-                .line-one-header {
-                    margin-top: 20px;
-                    margin-bottom: 10px;
-                }
-                .btn-header {
-                    margin-top: 10px;
-                    margin-bottom: 50px;
-                    padding: 8px 20px;
-                }
-                .lines-two-header {
-                    div {
-                        max-width: 110px;
-                    }
-                }
             }
         }
-    }
-    .story_about_us {
-        .wrapper {
-            max-width: 640px;
-            .story_about_us-img {
-                .story_about_us-img-behind {
-                    height: 125px;
-                }
-            }
-        }
-    }
-    .numbers {
-        div {
+        .story_about_us {
             .wrapper {
                 max-width: 640px;
-                .numbers-row {
-                    div {
-                        padding-top: 60px;
-                        padding-bottom: 60px;
+                .story_about_us-img {
+                    .story_about_us-img-behind {
+                        height: 125px;
                     }
                 }
             }
         }
-    }
-    .amazing_services {
-        padding-top: 50px;
-        padding-bottom: 70px;
-        .wrapper {
-            max-width: 640px;
-            .amazing_services-grid-indent {
-                .amazing_services-grid {
-                    grid-template-columns: 1fr;
-                    justify-items: center;
-                    grid-template-rows: 60px;
-                    grid-column-gap: 0px;
-                    grid-row-gap: 40px;
-                    .amazing_services-grid-inside {
-                        margin-top: 0px;
-                        img {
-                            margin-bottom: 10px;
+        .numbers {
+            div {
+                .wrapper {
+                    max-width: 640px;
+                    .numbers-row {
+                        div {
+                            padding-top: 60px;
+                            padding-bottom: 60px;
                         }
                     }
                 }
-                .amazing_services-grid:nth-of-type(1) {
-                    margin-bottom: 40px;
-                }
-                .amazing_services-grid-between {
-                    display: none;
-                }
             }
         }
-    }
-    .unique_design {
-        padding-top: 50px;
-        .wrapper {
-            max-width: 640px;
-            .unique_design-tablet {
-                width: 350px;
-                left: 120px;
-            }
-            .unique_design-phone {
-                width: 200px;
-                top: 40px;
-                left: 30px;
-            }
-        }
-    }
-    .what_we_do {
-        padding-top: 50px;
-        padding-bottom: 70px;
-        .wrapper {
-            max-width: 640px;
-        }
-    }
-    .chat_coment {
-        .wrapper {
-            max-width: 640px;
-            .mySlides {
-                .mySlides-inside-content {
-                    grid-template-columns: 130px auto;
-                    grid-gap: 30px;
-                    img {
-                        padding: 30px;
+        .amazing_services {
+            padding-top: 50px;
+            padding-bottom: 70px;
+            .wrapper {
+                max-width: 640px;
+                .amazing_services-grid-indent {
+                    .amazing_services-grid {
+                        grid-template-columns: 1fr;
+                        justify-items: center;
+                        grid-template-rows: 60px;
+                        grid-column-gap: 0px;
+                        grid-row-gap: 40px;
+                        .amazing_services-grid-inside {
+                            margin-top: 0px;
+                            img {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                    .amazing_services-grid:nth-of-type(1) {
+                        margin-bottom: 40px;
+                    }
+                    .amazing_services-grid-between {
+                        display: none;
                     }
                 }
             }
         }
-    }
-    .meet_our_team {
-        .wrapper {
-            max-width: 640px;
-            .meet_our_team-img {
-                grid-template-columns: repeat(3, 192px);
-                grid-template-rows: 270px auto;
+        .unique_design {
+            padding-top: 50px;
+            .wrapper {
+                max-width: 640px;
+                .unique_design-tablet {
+                    width: 350px;
+                    left: 120px;
+                }
+                .unique_design-phone {
+                    width: 200px;
+                    top: 40px;
+                    left: 30px;
+                }
             }
         }
-    }
-    .logos {
-        .wrapper {
-            max-width: 640px;
+        .what_we_do {
+            padding-top: 50px;
+            padding-bottom: 70px;
+            .wrapper {
+                max-width: 640px;
+            }
         }
-    }
-    .some_of_our_work {
-        padding-top: 70px;
-        .some_of_our_work-img-grid {
-            display: grid;
-            grid-template-rows: repeat(2, 200px);
-        }
-    }
-    .chat_coment-twoo {
-        .wrapper {
-            max-width: 640px;
-            .mySlides-twoo {
-                .mySlides-inside-content-twoo {
-                    grid-template-columns: 130px auto;
-                    grid-gap: 30px;
-                    img {
+        .chat_coment {
+            .wrapper {
+                max-width: 640px;
+                .mySlides {
+                    .mySlides-inside-content {
+                        grid-template-columns: 130px auto;
+                        grid-gap: 30px;
+                        img {
+                            padding: 30px;
+                        }
                     }
                 }
             }
         }
-    }
-    .what_people_say {
-        padding-top: 70px;
-        padding-bottom: 90px;
-        .wrapper {
-            max-width: 640px;
-        }
-    }
-    .latest_blog {
-        padding-top: 70px;
-        padding-bottom: 90px;
-        .wrapper {
-            max-width: 640px;
-            .latest_blog-grid {
-                grid-template-columns: repeat(3, 193px);
-                grid-template-rows: 150px auto;
+        .meet_our_team {
+            .wrapper {
+                max-width: 640px;
+                .meet_our_team-img {
+                    grid-template-columns: repeat(3, 192px);
+                    grid-template-rows: 270px auto;
+                }
             }
         }
-    }
-    .details {
-        padding-top: 70px;
-        padding-bottom: 90px;
-        .wrapper {
-            max-width: 640px;
-            .details-grid {
-                grid-template-columns: auto;
-                grid-row-gap: 50px;
-                .details-grid-infa {
-                    justify-content: center;
+        .logos {
+            .wrapper {
+                max-width: 640px;
+            }
+        }
+        .some_of_our_work {
+            padding-top: 70px;
+            .some_of_our_work-img-grid {
+                display: grid;
+                grid-template-rows: repeat(2, 200px);
+            }
+        }
+        .chat_coment-twoo {
+            .wrapper {
+                max-width: 640px;
+                .mySlides-twoo {
+                    .mySlides-inside-content-twoo {
+                        grid-template-columns: 130px auto;
+                        grid-gap: 30px;
+                        img {
+                        }
+                    }
                 }
-                .details-grid-blogs {
-                    //! grid (2)
-                    justify-content: center;
-                    grid-row-gap: 30px;
+            }
+        }
+        .what_people_say {
+            padding-top: 70px;
+            padding-bottom: 90px;
+            .wrapper {
+                max-width: 640px;
+            }
+        }
+        .latest_blog {
+            padding-top: 70px;
+            padding-bottom: 90px;
+            .wrapper {
+                max-width: 640px;
+                .latest_blog-grid {
+                    grid-template-columns: repeat(3, 193px);
+                    grid-template-rows: 150px auto;
+                    .latest_blog-grid-cell:nth-of-type(1) {
+                        .latest_blog-square {
+                            top: 70px;
+                        }
+                    }
                 }
-                .details-grid-instagram {
-                    //! grid (3)
-                    justify-content: center;
-                    display: grid;
-                    grid-template-columns: repeat(3, 88px);
-                    grid-template-rows: auto repeat(3, 88px) auto;
-                    grid-gap: 2px;
+            }
+        }
+        .details {
+            padding-top: 70px;
+            padding-bottom: 90px;
+            .wrapper {
+                max-width: 640px;
+                .details-grid {
+                    grid-template-columns: auto;
+                    grid-row-gap: 50px;
+                    .details-grid-infa {
+                        justify-content: center;
+                    }
+                    .details-grid-blogs {
+                        //! grid (2)
+                        justify-content: center;
+                        grid-row-gap: 30px;
+                    }
+                    .details-grid-instagram {
+                        //! grid (3)
+                        justify-content: center;
+                        display: grid;
+                        grid-template-columns: repeat(3, 88px);
+                        grid-template-rows: auto repeat(3, 88px) auto;
+                        grid-gap: 2px;
+                    }
                 }
             }
         }
     }
 }
 @media (max-width: 640px) {
-    header {
-        .gradient {
-            .wrapper {
-                max-width: 400px;
-                nav {
-                    display: inline;
-                    position: fixed;
-                    .burger {
-                        position: relative;
-                        bottom: 35px;
-                        left: 350px;
-                        display: block;
-                    }
-                    ul {
-                        left: 165px;
-                        padding-left: 0px;
-                        display: none;
-                        bottom: 0px;
-                        li {
-                            justify-content: center;
-                            display: flex;
-                            margin: 25px 0px;
-                            margin-left: 0px;
+    body {
+        header {
+            .gradient {
+                .wrapper {
+                    max-width: 400px;
+                    nav {
+                        display: inline;
+                        position: fixed;
+                        .burger {
+                            position: relative;
+                            bottom: 35px;
+                            left: 350px;
+                            display: block;
+                        }
+                        ul {
+                            left: 165px;
+                            padding-left: 0px;
+                            display: none;
+                            bottom: 0px;
+                            li {
+                                justify-content: center;
+                                display: flex;
+                                margin: 25px 0px;
+                                margin-left: 0px;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    .story_about_us {
-        margin-top: 70px;
-        margin-bottom: 90px;
-        .wrapper {
-            max-width: 470px;
-            .story_about_us-img {
-                display: block;
-                .story_about_us-img-behind {
-                    position: relative;
-                    margin: 30px auto;
-                    width: 380px;
-                    height: 250px;
-                }
-            }
-        }
-    }
-    .numbers {
-        div {
+        .story_about_us {
+            margin-top: 70px;
+            margin-bottom: 90px;
             .wrapper {
                 max-width: 470px;
-                .numbers-row {
-                    div {
-                        padding-top: 30px;
-                        padding-bottom: 30px;
+                .story_about_us-img {
+                    display: block;
+                    .story_about_us-img-behind {
+                        position: relative;
+                        margin: 30px auto;
+                        width: 380px;
+                        height: 250px;
                     }
                 }
             }
         }
-    }
-    .amazing_services {
-        .wrapper {
-            max-width: 470px;
-        }
-    }
-    .unique_design {
-        .wrapper {
-            max-width: 470px;
-            .unique_design-tablet {
-                width: 250px;
-                left: 90px;
-            }
-            .unique_design-phone {
-                width: 150px;
-                left: 25px;
-            }
-        }
-    }
-    .what_we_do {
-        .wrapper {
-            max-width: 470px;
-            .what_we_do-two-half {
-                padding-top: 60px;
-                grid-template-columns: 1fr;
-                grid-row-gap: 0px;
-                grid-template-rows: 350px;
-                .what_we_do-half-one {
-                }
-                .what_we_do-half-two {
-                    details {
-                        text-align: center;
+        .numbers {
+            div {
+                .wrapper {
+                    max-width: 470px;
+                    .numbers-row {
+                        div {
+                            padding-top: 30px;
+                            padding-bottom: 30px;
+                        }
                     }
                 }
             }
         }
-    }
-    .chat_coment {
-        .wrapper {
-            max-width: 470px;
-            .mySlides {
-                .mySlides-inside-content {
-                    grid-template-columns: 80px auto;
-                    grid-gap: 30px;
-                    img {
-                        width: 80px;
-                        padding: 20px;
+        .amazing_services {
+            .wrapper {
+                max-width: 470px;
+            }
+        }
+        .unique_design {
+            .wrapper {
+                max-width: 470px;
+                .unique_design-tablet {
+                    width: 250px;
+                    left: 90px;
+                }
+                .unique_design-phone {
+                    width: 150px;
+                    left: 25px;
+                }
+            }
+        }
+        .what_we_do {
+            .wrapper {
+                max-width: 470px;
+                .what_we_do-two-half {
+                    padding-top: 60px;
+                    grid-template-columns: 1fr;
+                    grid-row-gap: 0px;
+                    grid-template-rows: 350px;
+                    .what_we_do-half-one {
+                    }
+                    .what_we_do-half-two {
+                        details {
+                            text-align: center;
+                        }
                     }
                 }
             }
         }
-    }
-    .meet_our_team {
-        .wrapper {
-            max-width: 470px;
-            .meet_our_team-img {
-                padding-left: 140px;
-                grid-template-columns: repeat(1, 192px);
-                grid-template-rows: 270px auto 270px auto 270px auto;
-                grid-gap: 20px;
-                div:nth-of-type(1) {
-                    order: 1;
-                }
-                div:nth-of-type(2) {
-                    order: 3;
-                }
-                div:nth-of-type(3) {
-                    order: 5;
-                }
-                div:nth-of-type(4) {
-                    order: 2;
-                }
-                div:nth-of-type(5) {
-                    order: 4;
-                }
-                div:nth-of-type(6) {
-                    order: 6;
-                }
-            }
-        }
-    }
-    .logos {
-        .wrapper {
-            max-width: 470px;
-        }
-    }
-    .some_of_our_work {
-        padding-top: 50px;
-        .some_of_our_work-img-grid {
-            display: grid;
-            grid-template-rows: repeat(2, 150px);
-        }
-    }
-    .chat_coment-twoo {
-        .wrapper {
-            max-width: 470px;
-            .mySlides-twoo {
-                .mySlides-inside-content-twoo {
-                    grid-template-columns: 80px auto;
-                    grid-gap: 30px;
-                    img {
-                        width: 80px;
+        .chat_coment {
+            .wrapper {
+                max-width: 470px;
+                .mySlides {
+                    .mySlides-inside-content {
+                        grid-template-columns: 80px auto;
+                        grid-gap: 30px;
+                        img {
+                            width: 80px;
+                            padding: 20px;
+                        }
                     }
                 }
             }
         }
-    }
-    .what_people_say {
-        padding-top: 50px;
-        padding-bottom: 70px;
-        .wrapper {
-            max-width: 470px;
-            .what_people_say-grid {
-                padding-top: 80px;
+        .meet_our_team {
+            .wrapper {
+                max-width: 470px;
+                .meet_our_team-img {
+                    padding-left: 140px;
+                    grid-template-columns: repeat(1, 192px);
+                    grid-template-rows: 270px auto 270px auto 270px auto;
+                    grid-gap: 20px;
+                    div:nth-of-type(1) {
+                        order: 1;
+                    }
+                    div:nth-of-type(2) {
+                        order: 3;
+                    }
+                    div:nth-of-type(3) {
+                        order: 5;
+                    }
+                    div:nth-of-type(4) {
+                        order: 2;
+                    }
+                    div:nth-of-type(5) {
+                        order: 4;
+                    }
+                    div:nth-of-type(6) {
+                        order: 6;
+                    }
+                }
+            }
+        }
+        .logos {
+            .wrapper {
+                max-width: 470px;
+            }
+        }
+        .some_of_our_work {
+            padding-top: 50px;
+            .some_of_our_work-img-grid {
                 display: grid;
-                grid-template-columns: repeat(1, auto);
-                grid-template-rows: auto;
-                grid-column-gap: 0px;
-                grid-row-gap: 50px;
+                grid-template-rows: repeat(2, 150px);
             }
         }
-    }
-    .latest_blog {
-        padding-top: 50px;
-        padding-bottom: 70px;
-        .wrapper {
-            max-width: 470px;
-            .latest_blog-grid {
-                grid-template-columns: repeat(1, auto);
-                grid-template-rows: repeat(3, 240px auto);
-                grid-column-gap: 0px;
-                grid-row-gap: 20px;
-                .latest_blog-grid-cell:nth-of-type(1) {
-                    order: 1;
-                    .latest_blog-square {
-                        top: 160px;
+        .chat_coment-twoo {
+            .wrapper {
+                max-width: 470px;
+                .mySlides-twoo {
+                    .mySlides-inside-content-twoo {
+                        grid-template-columns: 80px auto;
+                        grid-gap: 30px;
+                        img {
+                            width: 80px;
+                        }
                     }
                 }
-                .latest_blog-grid-cell:nth-of-type(2) {
-                    order: 3;
-                }
-                .latest_blog-grid-cell:nth-of-type(3) {
-                    order: 5;
-                }
-                .latest_blog-grid-cell:nth-of-type(4) {
-                    order: 2;
-                }
-                .latest_blog-grid-cell:nth-of-type(5) {
-                    order: 4;
-                }
-                .latest_blog-grid-cell:nth-of-type(6) {
-                    order: 6;
+            }
+        }
+        .what_people_say {
+            padding-top: 50px;
+            padding-bottom: 70px;
+            .wrapper {
+                max-width: 470px;
+                .what_people_say-grid {
+                    padding-top: 80px;
+                    display: grid;
+                    grid-template-columns: repeat(1, auto);
+                    grid-template-rows: auto;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 50px;
                 }
             }
         }
-    }
-    .details {
-        padding-top: 50px;
-        padding-bottom: 70px;
-        .wrapper {
-            max-width: 470px;
+        .latest_blog {
+            padding-top: 50px;
+            padding-bottom: 70px;
+            .wrapper {
+                max-width: 470px;
+                .latest_blog-grid {
+                    grid-template-columns: repeat(1, auto);
+                    grid-template-rows: repeat(3, 240px auto);
+                    grid-column-gap: 0px;
+                    grid-row-gap: 20px;
+                    .latest_blog-grid-cell:nth-of-type(1) {
+                        order: 1;
+                        .latest_blog-square {
+                            top: 160px;
+                        }
+                    }
+                    .latest_blog-grid-cell:nth-of-type(2) {
+                        order: 3;
+                    }
+                    .latest_blog-grid-cell:nth-of-type(3) {
+                        order: 5;
+                    }
+                    .latest_blog-grid-cell:nth-of-type(4) {
+                        order: 2;
+                    }
+                    .latest_blog-grid-cell:nth-of-type(5) {
+                        order: 4;
+                    }
+                    .latest_blog-grid-cell:nth-of-type(6) {
+                        order: 6;
+                    }
+                }
+            }
+        }
+        .details {
+            padding-top: 50px;
+            padding-bottom: 70px;
+            .wrapper {
+                max-width: 470px;
+            }
         }
     }
 }
 @media (max-width: 470px) {
-    header {
-        .gradient {
+    body {
+        header {
+            .gradient {
+                .wrapper {
+                    max-width: 300px;
+                    nav {
+                        .burger {
+                            left: 250px;
+                            img {
+                            }
+                        }
+                        ul {
+                            left: 120px;
+                            li {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .story_about_us {
+            margin-top: 50px;
+            margin-bottom: 60px;
             .wrapper {
-                max-width: 300px;
-                nav {
-                    .burger {
-                        left: 250px;
+                max-width: 320px;
+                .story_about_us-img {
+                    .story_about_us-img-behind {
+                        margin: 15px auto;
+                        width: 200px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+        .numbers {
+            div {
+                .wrapper {
+                    max-width: 360px;
+                }
+            }
+        }
+        .unique_design {
+            .wrapper {
+                max-width: 200px;
+                .unique_design-tablet {
+                    width: 125px;
+                    left: 20px;
+                }
+                .unique_design-phone {
+                    width: 70px;
+                    top: 20px;
+                    left: -10px;
+                }
+            }
+        }
+        .what_we_do {
+            .wrapper {
+                max-width: 200px;
+                .what_we_do-two-half {
+                    grid-template-rows: 170px;
+                }
+            }
+        }
+        .chat_coment {
+            .wrapper {
+                max-width: 360px;
+                .mySlides {
+                    .mySlides-inside-content {
+                        grid-template-columns: auto;
                         img {
-                        }
-                    }
-                    ul {
-                        left: 120px;
-                        li {
+                            display: none;
                         }
                     }
                 }
             }
         }
-    }
-    .story_about_us {
-        margin-top: 50px;
-        margin-bottom: 60px;
-        .wrapper {
-            max-width: 320px;
-            .story_about_us-img {
-                .story_about_us-img-behind {
-                    margin: 15px auto;
-                    width: 200px;
-                    height: 150px;
+        .meet_our_team {
+            .wrapper {
+                max-width: 360px;
+                .meet_our_team-img {
+                    padding-left: 85px;
                 }
             }
         }
-    }
-    .numbers {
-        div {
+        .logos {
             .wrapper {
                 max-width: 360px;
             }
         }
-    }
-    .unique_design {
-        .wrapper {
-            max-width: 200px;
-            .unique_design-tablet {
-                width: 125px;
-                left: 20px;
-            }
-            .unique_design-phone {
-                width: 70px;
-                top: 20px;
-                left: -10px;
+        .some_of_our_work {
+            padding-top: 70px;
+            .some_of_our_work-img-grid {
+                display: grid;
+                grid-template-rows: repeat(2, 100px);
             }
         }
-    }
-    .what_we_do {
-        .wrapper {
-            max-width: 200px;
-            .what_we_do-two-half {
-                grid-template-rows: 170px;
-            }
-        }
-    }
-    .chat_coment {
-        .wrapper {
-            max-width: 360px;
-            .mySlides {
-                .mySlides-inside-content {
-                    grid-template-columns: auto;
-                    img {
-                        display: none;
+        .chat_coment-twoo {
+            .wrapper {
+                max-width: 360px;
+                .mySlides-twoo {
+                    .mySlides-inside-content-twoo {
+                        grid-template-columns: auto;
+                        img {
+                            display: none;
+                        }
                     }
                 }
             }
         }
-    }
-    .meet_our_team {
-        .wrapper {
-            max-width: 360px;
-            .meet_our_team-img {
-                padding-left: 85px;
+        .what_people_say {
+            .wrapper {
+                max-width: 360px;
             }
         }
-    }
-    .logos {
-        .wrapper {
-            max-width: 360px;
-        }
-    }
-    .some_of_our_work {
-        padding-top: 70px;
-        .some_of_our_work-img-grid {
-            display: grid;
-            grid-template-rows: repeat(2, 100px);
-        }
-    }
-    .chat_coment-twoo {
-        .wrapper {
-            max-width: 360px;
-            .mySlides-twoo {
-                .mySlides-inside-content-twoo {
-                    grid-template-columns: auto;
-                    img {
-                        display: none;
-                    }
-                }
+        .latest_blog {
+            .wrapper {
+                max-width: 360px;
             }
         }
-    }
-    .what_people_say {
-        .wrapper {
-            max-width: 360px;
-        }
-    }
-    .latest_blog {
-        .wrapper {
-            max-width: 360px;
-        }
-    }
-    .details {
-        .wrapper {
-            max-width: 360px;
-            .details-grid {
-                .details-grid-infa {
-                    form {
-                        input {
-                            max-width: 200px;
+        .details {
+            .wrapper {
+                max-width: 360px;
+                .details-grid {
+                    .details-grid-infa {
+                        form {
+                            input {
+                                max-width: 200px;
+                            }
                         }
                     }
                 }
@@ -1567,67 +1580,69 @@ body {
     }
 }
 @media (max-width: 360px) {
-    .story_about_us {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    .numbers {
-        div {
+    body {
+        .story_about_us {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .numbers {
+            div {
+                .wrapper {
+                    max-width: 300px;
+                }
+            }
+        }
+        .chat_coment {
             .wrapper {
                 max-width: 300px;
             }
         }
-    }
-    .chat_coment {
-        .wrapper {
-            max-width: 300px;
-        }
-    }
-    .meet_our_team {
-        .wrapper {
-            max-width: 300px;
-            .meet_our_team-img {
-                padding-left: 55px;
+        .meet_our_team {
+            .wrapper {
+                max-width: 300px;
+                .meet_our_team-img {
+                    padding-left: 55px;
+                }
             }
         }
-    }
-    .logos {
-        .wrapper {
-            max-width: 300px;
+        .logos {
+            .wrapper {
+                max-width: 300px;
+            }
         }
-    }
-    .chat_coment-twoo {
-        .wrapper {
-            max-width: 300px;
+        .chat_coment-twoo {
+            .wrapper {
+                max-width: 300px;
+            }
         }
-    }
-    .what_people_say {
-        .wrapper {
-            max-width: 300px;
+        .what_people_say {
+            .wrapper {
+                max-width: 300px;
+            }
         }
-    }
-    .latest_blog {
-        .wrapper {
-            max-width: 300px;
-            .latest_blog-grid {
-                grid-template-rows: repeat(3, 140px auto);
-                .latest_blog-grid-cell:nth-of-type(1) {
-                    .latest_blog-square {
-                        position: relative;
-                        top: 60px;
+        .latest_blog {
+            .wrapper {
+                max-width: 300px;
+                .latest_blog-grid {
+                    grid-template-rows: repeat(3, 140px auto);
+                    .latest_blog-grid-cell:nth-of-type(1) {
+                        .latest_blog-square {
+                            position: relative;
+                            top: 60px;
+                        }
                     }
                 }
             }
         }
-    }
-    .details {
-        .wrapper {
-            max-width: 300px;
-            .details-grid {
-                .details-grid-infa {
-                    form {
-                        input {
-                            max-width: 140px;
+        .details {
+            .wrapper {
+                max-width: 300px;
+                .details-grid {
+                    .details-grid-infa {
+                        form {
+                            input {
+                                max-width: 140px;
+                            }
                         }
                     }
                 }
@@ -1636,9 +1651,11 @@ body {
     }
 }
 @media (max-width: 320px) {
-    .some_of_our_work {
-        .wrapper {
-            max-width: 270px;
+    body {
+        .some_of_our_work {
+            .wrapper {
+                max-width: 270px;
+            }
         }
     }
 }
